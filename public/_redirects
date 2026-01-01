@@ -1,0 +1,4 @@
+http://*/* https://:host/:splat 301
+
+https://www.nguyenthuyen.com/* https://nguyenthuyen.com/:splat 301
+https://nguyenthuyen.pages.dev/* https://nguyenthuyen.com/:splat 301
