@@ -10,3 +10,5 @@ html[data-motion=paused] *,html[data-motion=paused] *:before,html[data-motion=pa
 
 /* Keep browser focus and programmatic form scrolling immediate. */
 html{scroll-behavior:auto;scroll-padding-top:120px;scroll-padding-bottom:100px}
+/* Keep every layer label visible in the overlapping stack. */
+.system-sheet>.mono{position:absolute;bottom:20px;left:25px}.system-sheet .sheet-lines{left:auto;right:24px;bottom:25px}.system-sheet .sheet-lines i{width:15px}.system-sheet .sheet-lines i:nth-child(2){width:25px}
