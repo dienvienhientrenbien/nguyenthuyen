@@ -5,6 +5,7 @@ import Experience from './Experience.astro';
 import Brief from './Brief.astro';
 import data from '../data/content.json';
 import ContactChannels from './ContactChannels.astro';
+import Resilience from './Resilience.astro';
 const { page='home', lang='en' } = Astro.props;
 const d=data.pages[lang][page], u=data.ui[lang], brand=data.brand;
 const personal=brand==='personal',creative=brand==='creative';
@@ -23,6 +24,7 @@ const description=d.description||`${d.title} — ${brandName}`;
  <div class="divider"><p>{d.divider}</p><div class="expertise">{d.expertise.map(x=><span>{x}</span>)}</div></div>
  </> : <section class="page-hero"><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/>{d.lead&&<p class="lead">{d.lead}</p>}</section>}
 
+{personal&&['home','principles'].includes(page)&&<Resilience page={page} lang={lang}/>}
 <Experience page={page} lang={lang}/>
 {page==='contact'&&<Brief lang={lang}/>}
 

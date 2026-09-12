@@ -4,10 +4,10 @@
     "en": {
       "home": {
         "title": "Systems, Technology & Perspective",
-        "description": "Keep the essentials. I work with systems, technology and ideas that can become useful in everyday life.",
+        "description": "I work with systems, technology and operations. I look for clarity: what needs to stay, what can change and how to find a way back when something fails.",
         "eyebrow": "SYSTEMS · TECHNOLOGY · PERSPECTIVE",
         "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
-        "lead": "Keep the essentials. I work with systems, technology and ideas that can become useful in everyday life.",
+        "lead": "I work with systems, technology and operations. I look for clarity: what needs to stay, what can change and how to find a way back when something fails.",
         "cta": "Start a conversation",
         "secondary": "A little about me",
         "micro": "CLEAR THINKING. PRACTICAL WORK.",
@@ -31,18 +31,22 @@
       },
       "about": {
         "title": "About",
-        "description": "I’m Nguyễn Đình Thuyên. I work with technology, operations and structures that can keep going when conditions are imperfect.",
+        "description": "I am Nguyễn Đình Thuyên. I care about systems that serve people on ordinary days and when things stop going to plan.",
         "eyebrow": "A little about me",
         "heading": "Understand the system.<br/>Keep the essentials.",
-        "lead": "I’m Nguyễn Đình Thuyên. I work with technology, operations and structures that can keep going when conditions are imperfect.",
+        "lead": "I am Nguyễn Đình Thuyên. I care about systems that serve people on ordinary days and when things stop going to plan.",
         "sections": [
           [
-            "A practical approach",
-            "I care about preserving a way back, avoiding unnecessary lock-in and protecting the core when something fails. Technology, operations and creativity all begin with context, clear questions and room to adjust."
+            "An experience that changed the question",
+            "After losing data, I realised that layers of protection were not enough when their recovery paths depended on one another. That experience brought my attention to structure, the boundaries of each part and the ability to return to work."
           ],
           [
-            "A point of connection",
-            "This site introduces my approach, areas of work and direct contact details. For maritime Internet and onboard technology inquiries, visit DUNCAN SYSTEM LLC."
+            "Designing for people who can make mistakes",
+            "I value tools that are understandable, changes that can be reviewed and documentation another person can follow. A system needs room for forgetfulness, haste and days when its user is not at their best."
+          ],
+          [
+            "From systems to everyday life",
+            "That perspective follows me into technology and operations at sea. Music and film photography offer another rhythm: slow down, observe, choose what to keep and leave room around it."
           ]
         ]
       },
@@ -55,30 +59,30 @@
       },
       "principles": {
         "title": "Principles",
-        "description": "I design around controlled loss and recovery, rather than trying to preserve everything at any cost.",
+        "description": "I make recovery part of the design from the start. Protect what matters, accept what can be replaced and keep one failure from taking everything with it.",
         "eyebrow": "Principles",
-        "heading": "A system needs<br/>a way back.",
-        "lead": "I design around controlled loss and recovery, rather than trying to preserve everything at any cost.",
-        "quote": "Security should protect access without locking out the person it serves.",
+        "heading": "Design for<br/>a way back.",
+        "lead": "I make recovery part of the design from the start. Protect what matters, accept what can be replaced and keep one failure from taking everything with it.",
+        "quote": "A good system leaves room for human error.",
         "sections": [
           [
-            "ROOT",
-            "The foundation to protect. Without it, the system cannot continue."
+            "01 / An independent anchor",
+            "A recovery path needs to exist outside the thing being recovered. I avoid loops where opening A requires B, while opening B requires A."
           ],
           [
-            "CORE",
-            "The essential operating parts. Losing them stops the system."
+            "02 / Different parts, different priorities",
+            "I use ROOT, CORE, BRANCH and LEAF to decide what to preserve first. This is my way of thinking about design, not a security standard that applies identically to everyone."
           ],
           [
-            "BRANCH",
-            "Useful extensions. The system can continue without them."
+            "03 / Recovery that can be carried out",
+            "Having data somewhere else and being able to retrieve it are separate things. A dependable recovery path needs clear instructions and checks under appropriate conditions."
           ],
           [
-            "LEAF",
-            "Presentation and decoration. Let them go when necessary."
+            "04 / Change in manageable steps",
+            "I prefer changing one part at a time, keeping a known working state and reviewing the result before continuing. When the situation is unclear, I begin by understanding what is still available."
           ]
         ],
-        "closing": "When a trade-off is unavoidable, protect ROOT and CORE first."
+        "closing": "Keep the essentials. Leave room for error. Know the way back."
       },
       "contact": {
         "title": "Contact",
@@ -130,10 +134,10 @@
     "vi": {
       "home": {
         "title": "Hệ thống, công nghệ & góc nhìn",
-        "description": "Tối giản để giữ lõi. Tôi làm việc với hệ thống, công nghệ và những ý tưởng có thể đi vào đời sống.",
+        "description": "Tôi làm việc với hệ thống, công nghệ và vận hành. Điều tôi theo đuổi là sự rõ ràng: biết phần nào cần giữ, phần nào có thể đổi và cách quay lại khi có sự cố.",
         "eyebrow": "HỆ THỐNG · CÔNG NGHỆ · GÓC NHÌN",
         "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
-        "lead": "Tối giản để giữ lõi. Tôi làm việc với hệ thống, công nghệ và những ý tưởng có thể đi vào đời sống.",
+        "lead": "Tôi làm việc với hệ thống, công nghệ và vận hành. Điều tôi theo đuổi là sự rõ ràng: biết phần nào cần giữ, phần nào có thể đổi và cách quay lại khi có sự cố.",
         "cta": "Trò chuyện cùng tôi",
         "secondary": "Đôi điều về tôi",
         "micro": "RÕ RÀNG TRONG TƯ DUY. THỰC TẾ TRONG CÁCH LÀM.",
@@ -157,18 +161,22 @@
       },
       "about": {
         "title": "Giới thiệu",
-        "description": "Tôi là Nguyễn Đình Thuyên. Tôi làm việc với công nghệ, vận hành và những cấu trúc có thể tiếp tục hoạt động trong điều kiện không hoàn hảo.",
+        "description": "Tôi là Nguyễn Đình Thuyên. Tôi quan tâm đến những hệ thống phục vụ con người trong cả ngày bình thường lẫn lúc mọi thứ không còn đi đúng kế hoạch.",
         "eyebrow": "Đôi điều về tôi",
         "heading": "Hiểu hệ thống.<br/>Giữ điều cốt lõi.",
-        "lead": "Tôi là Nguyễn Đình Thuyên. Tôi làm việc với công nghệ, vận hành và những cấu trúc có thể tiếp tục hoạt động trong điều kiện không hoàn hảo.",
+        "lead": "Tôi là Nguyễn Đình Thuyên. Tôi quan tâm đến những hệ thống phục vụ con người trong cả ngày bình thường lẫn lúc mọi thứ không còn đi đúng kế hoạch.",
         "sections": [
           [
-            "Một cách làm thực tế",
-            "Tôi quan tâm đến việc giữ đường lui, tránh tự khóa mình và bảo toàn phần lõi khi mọi thứ hỏng. Công nghệ, vận hành và sáng tạo đều bắt đầu từ bối cảnh, câu hỏi rõ ràng và khoảng trống để điều chỉnh."
+            "Một trải nghiệm làm thay đổi câu hỏi",
+            "Sau một lần mất dữ liệu, tôi nhận ra nhiều lớp bảo vệ vẫn chưa đủ nếu các đường khôi phục phụ thuộc lẫn nhau. Trải nghiệm đó khiến tôi quan tâm hơn đến cấu trúc, giới hạn của từng phần và khả năng trở lại làm việc."
           ],
           [
-            "Một điểm kết nối",
-            "Website giới thiệu cách tôi làm việc, các hướng công việc và kênh liên hệ trực tiếp. Với nhu cầu Internet hàng hải và công nghệ trên tàu, hãy xem DUNCAN SYSTEM LLC."
+            "Thiết kế cho con người có thể mắc lỗi",
+            "Tôi thích công cụ dễ hiểu, thay đổi có thể xem lại và tài liệu mà một người khác có thể làm theo. Một hệ thống cần chừa chỗ cho sự quên, sự vội và những ngày người sử dụng không ở trạng thái tốt nhất."
+          ],
+          [
+            "Từ hệ thống đến đời sống",
+            "Cách nhìn ấy theo tôi trong công nghệ và vận hành trên tàu. Âm nhạc và ảnh film cho tôi một nhịp khác: chậm lại để quan sát, chọn điều đáng giữ, rồi để phần còn lại có khoảng thở."
           ]
         ]
       },
@@ -181,30 +189,30 @@
       },
       "principles": {
         "title": "Nguyên tắc",
-        "description": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
+        "description": "Tôi đặt khả năng khôi phục vào trong thiết kế ngay từ đầu. Bảo vệ điều cốt lõi, chấp nhận phần có thể thay thế và giữ cho sự cố không kéo theo mọi thứ.",
         "eyebrow": "Nguyên tắc",
-        "heading": "Hệ thống cần<br/>một đường lui.",
-        "lead": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
-        "quote": "Bảo mật cần bảo vệ quyền truy cập mà không tự khóa người sử dụng.",
+        "heading": "Thiết kế để<br/>còn đường quay lại.",
+        "lead": "Tôi đặt khả năng khôi phục vào trong thiết kế ngay từ đầu. Bảo vệ điều cốt lõi, chấp nhận phần có thể thay thế và giữ cho sự cố không kéo theo mọi thứ.",
+        "quote": "Hệ thống tốt không đòi hỏi con người hoàn hảo.",
         "sections": [
           [
-            "ROOT",
-            "Gốc phải được bảo toàn. Nếu mất, hệ thống không thể tiếp tục."
+            "01 / Một điểm tựa độc lập",
+            "Đường khôi phục cần tồn tại ngoài chính thứ đang được khôi phục. Tôi tránh những vòng phụ thuộc mà muốn mở A phải có B, rồi muốn mở B lại cần A."
           ],
           [
-            "CORE",
-            "Phần lõi vận hành. Mất CORE là hệ thống dừng."
+            "02 / Mỗi phần có một mức ưu tiên",
+            "Tôi chia hệ thống thành ROOT, CORE, BRANCH và LEAF để quyết định cần giữ gì trước. Đây là cách tôi suy nghĩ về thiết kế, không phải một tiêu chuẩn bảo mật áp dụng giống nhau cho mọi người."
           ],
           [
-            "BRANCH",
-            "Phần mở rộng hữu ích. Mất vẫn có thể tiếp tục vận hành."
+            "03 / Khôi phục phải làm được",
+            "Tôi phân biệt việc có dữ liệu ở một nơi khác với việc thực sự lấy lại được dữ liệu ấy. Một đường khôi phục đáng tin cần có hướng dẫn rõ và được kiểm tra trong điều kiện phù hợp."
           ],
           [
-            "LEAF",
-            "Phần trình bày, trang trí. Chấp nhận bỏ khi cần."
+            "04 / Thay đổi có nhịp",
+            "Tôi ưu tiên thay đổi từng phần, giữ lại trạng thái đã hoạt động và xem kết quả trước khi đi tiếp. Khi tình huống chưa rõ, việc đầu tiên là hiểu mình còn giữ được gì."
           ]
         ],
-        "closing": "Khi buộc phải lựa chọn, ưu tiên bảo vệ ROOT và CORE."
+        "closing": "Giữ điều cốt lõi. Chừa chỗ cho sai sót. Luôn biết đường về."
       },
       "contact": {
         "title": "Liên hệ",
@@ -256,10 +264,10 @@
     "zh": {
       "home": {
         "title": "系统、技术与视角",
-        "description": "保留核心。我关注系统、技术，以及能在日常生活中发挥作用的想法。",
+        "description": "我从事系统、技术与运营相关工作。我看重清晰：知道什么需要保留，什么可以改变，以及发生故障后如何回来。",
         "eyebrow": "系统 · 技术 · 视角",
         "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
-        "lead": "保留核心。我关注系统、技术，以及能在日常生活中发挥作用的想法。",
+        "lead": "我从事系统、技术与运营相关工作。我看重清晰：知道什么需要保留，什么可以改变，以及发生故障后如何回来。",
         "cta": "开始交流",
         "secondary": "关于我",
         "micro": "清晰思考，务实做事。",
@@ -283,18 +291,22 @@
       },
       "about": {
         "title": "关于我",
-        "description": "我是 Nguyễn Đình Thuyên。我关注技术、运营，以及能在不完美条件下继续运行的系统。",
+        "description": "我是 Nguyễn Đình Thuyên。我关心的系统，既能服务日常，也能在人们的计划被打乱时继续提供支持。",
         "eyebrow": "关于我",
         "heading": "理解系统。<br/>保留核心。",
-        "lead": "我是 Nguyễn Đình Thuyên。我关注技术、运营，以及能在不完美条件下继续运行的系统。",
+        "lead": "我是 Nguyễn Đình Thuyên。我关心的系统，既能服务日常，也能在人们的计划被打乱时继续提供支持。",
         "sections": [
           [
-            "务实的方法",
-            "保留退路、避免不必要的绑定，并在发生故障时保护核心，是我关心的事。技术、运营和创作都从理解背景、提出清晰问题及保留调整空间开始。"
+            "一次经历，改变了提问的方式",
+            "丢失数据后，我意识到：如果恢复路径彼此依赖，增加保护层并不足够。这次经历让我更关注结构、各部分的边界，以及恢复工作的能力。"
           ],
           [
-            "一个交流起点",
-            "本网站介绍我的方法、工作方向和直接联系方式。如需海事互联网及船载技术服务，请了解 DUNCAN SYSTEM LLC。"
+            "为会犯错的人设计",
+            "我重视易于理解的工具、可以复查的变更，以及别人也能照着执行的文档。系统需要容得下遗忘、匆忙，以及使用者状态不佳的日子。"
+          ],
+          [
+            "从系统到日常生活",
+            "这种思考也伴随我处理海上技术与运营工作。音乐和胶片摄影则带来另一种节奏：慢下来观察，选择值得保留的事物，再给其余部分留一点空间。"
           ]
         ]
       },
@@ -307,30 +319,30 @@
       },
       "principles": {
         "title": "原则",
-        "description": "我重视可控损失与恢复能力，而不是不惜代价地保留一切。",
+        "description": "我从一开始就把恢复能力纳入设计。保护关键部分，接受可以替换的部分，避免一个故障带走整个系统。",
         "eyebrow": "原则",
-        "heading": "系统需要<br/>一条退路。",
-        "lead": "我重视可控损失与恢复能力，而不是不惜代价地保留一切。",
-        "quote": "安全应当保护访问权，而不是把使用者锁在门外。",
+        "heading": "设计之初，<br/>就留好归路。",
+        "lead": "我从一开始就把恢复能力纳入设计。保护关键部分，接受可以替换的部分，避免一个故障带走整个系统。",
+        "quote": "好的系统，为人的失误留有余地。",
         "sections": [
           [
-            "ROOT",
-            "必须保护的根基。失去它，系统就无法继续。"
+            "01 / 独立的支点",
+            "恢复路径需要存在于被恢复对象之外。我避免这样的循环：打开 A 需要 B，而打开 B 又需要 A。"
           ],
           [
-            "CORE",
-            "维持运行的核心部分。失去它，系统就会停止。"
+            "02 / 不同部分，不同优先级",
+            "我用 ROOT、CORE、BRANCH 和 LEAF 来判断应该先保留什么。这是我思考设计的方式，并非适用于所有人的统一安全标准。"
           ],
           [
-            "BRANCH",
-            "有用的扩展。没有它们，系统仍可继续。"
+            "03 / 能够实际执行的恢复",
+            "数据存放在另一处，与真正能够取回数据，是两回事。可靠的恢复路径需要清晰说明，也需要在适当条件下验证。"
           ],
           [
-            "LEAF",
-            "呈现与装饰。必要时可以舍弃。"
+            "04 / 分步改变",
+            "我倾向于一次改变一个部分，保留已知可用的状态，并在继续之前检查结果。情况不明时，我先弄清还有什么可以依靠。"
           ]
         ],
-        "closing": "当取舍不可避免时，优先保护 ROOT 和 CORE。"
+        "closing": "保留关键，容许失误，知道回来的路。"
       },
       "contact": {
         "title": "联系",

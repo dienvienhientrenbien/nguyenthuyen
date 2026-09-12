@@ -1,0 +1,107 @@
+{
+  "vi": {
+    "label": "TỪ TRẢI NGHIỆM ĐẾN CÁCH LÀM",
+    "heading": "Vững vàng, kể cả khi<br/>con người mắc lỗi.",
+    "story": "Một lần mất dữ liệu khiến tôi nhìn lại cách mình xây dựng hệ thống. Các lớp bảo vệ vẫn ở đó, nhưng đường khôi phục lại phụ thuộc lẫn nhau. Từ đó, tôi luôn bắt đầu bằng câu hỏi: nếu một phần biến mất, điều gì còn giúp mình quay lại?",
+    "quote": "Hệ thống tốt không đòi hỏi con người hoàn hảo.",
+    "credit": "Từ ghi chép cá nhân · 15.12.2025",
+    "try": "Thử một tình huống",
+    "route": "Đường quay lại",
+    "stages": [
+      "Điểm tựa độc lập",
+      "Khôi phục phần lõi",
+      "Tiếp tục công việc"
+    ],
+    "read": "Đọc ghi chép của tôi",
+    "scenarios": [
+      [
+        "Mất thiết bị",
+        "Mất một thiết bị, còn một điểm tựa.",
+        "Tôi xem thiết bị là thứ có thể hỏng hoặc thất lạc. Khả năng quay lại cần một điểm tựa độc lập với chính thiết bị ấy, cùng hướng dẫn đủ rõ để làm theo khi đang bối rối.",
+        "Câu hỏi tôi đặt ra: nếu chỉ còn những gì nằm ngoài thiết bị này, tôi bắt đầu từ đâu?"
+      ],
+      [
+        "Dịch vụ gián đoạn",
+        "Một phần dừng, phần còn lại có đường đi.",
+        "Tôi phân biệt điều cần giữ để làm việc với điều có thể dựng lại sau. Tách các phụ thuộc giúp một sự cố nhỏ có cơ hội dừng ở phạm vi nhỏ.",
+        "Câu hỏi tôi đặt ra: phần nào phải khôi phục trước, phần nào có thể chờ?"
+      ],
+      [
+        "Thêm công cụ mới",
+        "Thêm tiện ích, giữ quyền lựa chọn.",
+        "Trước khi thêm một dịch vụ, tôi nhìn cả lối vào lẫn lối ra: dữ liệu có lấy lại được không, cấu hình có thể bàn giao không, và việc bỏ công cụ có kéo theo phần lõi không?",
+        "Câu hỏi tôi đặt ra: nếu ngày mai không dùng công cụ này nữa, điều gì vẫn thuộc về mình?"
+      ]
+    ]
+  },
+  "en": {
+    "label": "EXPERIENCE INTO PRACTICE",
+    "heading": "Built to hold up.<br/>Room to be human.",
+    "story": "Losing data made me reconsider how I built systems. The safeguards were there, but the recovery paths depended on one another. Since then, I start with a question: if one part disappears, what still gives me a way back?",
+    "quote": "A good system leaves room for human error.",
+    "credit": "From personal notes · 15 December 2025",
+    "try": "Explore a situation",
+    "route": "A way back",
+    "stages": [
+      "An independent anchor",
+      "Recover the core",
+      "Return to work"
+    ],
+    "read": "Read my notes",
+    "scenarios": [
+      [
+        "A device is lost",
+        "One device lost. An anchor remains.",
+        "I treat devices as things that can fail or go missing. A way back needs an anchor outside that device, with instructions clear enough to follow under stress.",
+        "My question: with only what exists outside this device, where would I start?"
+      ],
+      [
+        "A service goes down",
+        "One part stops. The rest has a path.",
+        "I separate what is needed to keep working from what can be rebuilt later. Keeping dependencies apart gives a small failure a chance to stay small.",
+        "My question: what must come back first, and what can wait?"
+      ],
+      [
+        "A new tool is added",
+        "Add convenience. Keep the choice.",
+        "Before adopting a service, I look at the way in and the way out: can I retrieve the data, hand over the configuration and leave the tool without losing the core?",
+        "My question: if I stopped using this tool tomorrow, what would still be mine?"
+      ]
+    ]
+  },
+  "zh": {
+    "label": "从经历到实践",
+    "heading": "系统稳得住，<br/>也容得下人的失误。",
+    "story": "一次数据丢失，让我重新审视自己搭建系统的方式。保护措施仍在，恢复路径却彼此依赖。从那以后，我总会先问：如果某个部分消失了，还有什么能让我回来？",
+    "quote": "好的系统，为人的失误留有余地。",
+    "credit": "摘自个人笔记 · 2025年12月15日",
+    "try": "选择一个情境",
+    "route": "回来的路",
+    "stages": [
+      "独立的支点",
+      "恢复核心",
+      "继续工作"
+    ],
+    "read": "阅读我的笔记",
+    "scenarios": [
+      [
+        "设备丢失",
+        "失去一台设备，仍有一个支点。",
+        "我把设备看作可能损坏或遗失的东西。恢复需要设备之外的独立支点，也需要在慌乱时仍能照着执行的清晰说明。",
+        "我会问：只靠这台设备之外的东西，我能从哪里开始？"
+      ],
+      [
+        "服务中断",
+        "一部分停下，其余仍有出路。",
+        "我会区分继续工作所必需的部分，以及可以稍后重建的部分。分开依赖关系，才能让小故障有机会停留在小范围内。",
+        "我会问：什么必须先恢复，什么可以等一等？"
+      ],
+      [
+        "增加新工具",
+        "增加便利，也保留选择。",
+        "采用一项服务前，我既看入口，也看出口：数据能否取回、配置能否交接、放弃这个工具会不会带走核心？",
+        "我会问：如果明天不再使用这个工具，还有什么属于自己？"
+      ]
+    ]
+  }
+}

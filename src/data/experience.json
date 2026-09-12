@@ -1,27 +1,33 @@
 {
   "en": {
     "intro": [
-      "Systems with a way back.",
-      "Technology becomes useful when people can understand it, operate it and recover it. My starting point is the relationship between those three things."
+      "Four layers. Four priorities.",
+      "I separate the foundation for recovery, the core for operation and the parts that can be rebuilt. Choose a layer to explore its role."
     ],
     "layers": [
       [
         "ROOT",
-        "Protect the foundation.",
-        "Know who owns the domain, the accounts and the source. Keep recovery routes and access responsibilities clear before adding another service.",
-        "Ownership / access / recovery"
+        "An anchor for recovery.",
+        "Foundational identity and ownership need an independent recovery path. I keep this layer small, with few dependencies on services that may change.",
+        "Identity / ownership / anchor"
       ],
       [
         "CORE",
-        "Keep the essentials working.",
-        "Identify the parts a workflow cannot do without. Prefer documented settings, readable tools and a practical way to restore a known working state.",
-        "Operations / clarity / resilience"
+        "The essentials for operation.",
+        "What makes daily work possible needs protection and a way to recover from outside. The only key should not be inside the box it opens.",
+        "Access / configuration / recovery"
       ],
       [
-        "BRANCH + LEAF",
-        "Add what earns its place.",
-        "A new feature or a visual detail should help someone make a decision or complete a task. Keep extensions separable so the core can continue when they change.",
-        "Interfaces / experiments / expression"
+        "BRANCH",
+        "Infrastructure that can be rebuilt.",
+        "Domains, services and connections extend the system. I make dependencies and recovery paths clear so a failure here need not take down the foundation.",
+        "Infrastructure / dependencies / replacement"
+      ],
+      [
+        "LEAF",
+        "Tools I can let go of.",
+        "Applications and conveniences should make work easier. I keep the core and its data independent enough to change or leave a tool when it no longer fits.",
+        "Tools / experiments / choice"
       ]
     ],
     "scenarios": [
@@ -85,14 +91,14 @@
     "notes": [
       [
         "recovery",
-        "Keep a way back.",
-        "SYSTEMS",
-        "A backup is useful only if there is a practical way to restore it. The same applies to accounts, configurations and the small scripts that keep a workflow moving.",
-        "Before changing a system, keep a known working state, record what is being changed and decide how to reverse the change. Recovery should be something a person can follow, not something that exists only in someone’s memory.",
+        "Good systems leave room for mistakes.",
+        "PERSONAL NOTES · 15 DEC 2025",
+        "Losing data changed the question I asked. Alongside protecting access, I needed to know how I would return if several familiar anchors disappeared together.",
+        "In my personal notebook, I divide a system into ROOT, CORE, BRANCH and LEAF. What matters to me is the order of priorities and the independence of recovery: preserve the foundation, rebuild the core, then return to tools that can be replaced.",
         [
-          "Name the owner and the recovery route.",
-          "Keep a readable record of important changes.",
-          "Check a restore path before relying on it."
+          "A recovery path should not depend on the very thing that has been lost.",
+          "A copy is a starting point; the ability to retrieve it needs checking.",
+          "Instructions need to make sense even when the user is tired or under stress."
         ]
       ],
       [
@@ -123,27 +129,33 @@
   },
   "vi": {
     "intro": [
-      "Hệ thống cần có đường quay lại.",
-      "Công nghệ hữu ích khi con người hiểu được, vận hành được và khôi phục được. Tôi bắt đầu từ mối liên hệ giữa ba điều đó."
+      "Bốn lớp, bốn mức ưu tiên.",
+      "Tôi phân biệt nền tảng để quay lại, phần lõi để vận hành và những phần có thể dựng lại. Chọn một lớp để xem vai trò của nó."
     ],
     "layers": [
       [
         "ROOT",
-        "Bảo vệ nền tảng.",
-        "Biết ai sở hữu tên miền, tài khoản và mã nguồn. Làm rõ cách khôi phục và trách nhiệm truy cập trước khi thêm một dịch vụ mới.",
-        "Sở hữu / truy cập / khôi phục"
+        "Điểm tựa để quay lại.",
+        "Nền tảng danh tính và quyền sở hữu cần một đường khôi phục độc lập. Tôi giữ lớp này gọn, ít phụ thuộc vào những dịch vụ có thể thay đổi.",
+        "Danh tính / sở hữu / điểm tựa"
       ],
       [
         "CORE",
-        "Giữ phần thiết yếu hoạt động.",
-        "Xác định những phần không thể thiếu của công việc. Ưu tiên cấu hình có tài liệu, công cụ dễ hiểu và cách trở về trạng thái đã hoạt động tốt.",
-        "Vận hành / rõ ràng / bền bỉ"
+        "Phần lõi để vận hành.",
+        "Những gì giúp tôi tiếp tục làm việc cần được bảo vệ và có cách khôi phục từ bên ngoài. Chìa khóa duy nhất không nên nằm trong chính chiếc hộp mà nó mở.",
+        "Truy cập / cấu hình / khôi phục"
       ],
       [
-        "BRANCH + LEAF",
-        "Thêm những gì thực sự có ích.",
-        "Một tính năng hay chi tiết giao diện nên giúp người dùng quyết định hoặc hoàn thành việc gì đó. Giữ phần mở rộng có thể tách ra để phần lõi vẫn tiếp tục hoạt động.",
-        "Giao diện / thử nghiệm / biểu đạt"
+        "BRANCH",
+        "Hạ tầng có thể dựng lại.",
+        "Tên miền, dịch vụ và các kết nối tạo thành phần mở rộng của hệ thống. Tôi làm rõ phụ thuộc và đường quay lại để sự cố ở đây không kéo đổ nền tảng.",
+        "Hạ tầng / phụ thuộc / thay thế"
+      ],
+      [
+        "LEAF",
+        "Công cụ có thể buông.",
+        "Ứng dụng và tiện ích nên giúp công việc nhẹ hơn. Tôi giữ dữ liệu và phần lõi đủ độc lập để có thể đổi hoặc bỏ một công cụ khi nó không còn phù hợp.",
+        "Tiện ích / thử nghiệm / lựa chọn"
       ]
     ],
     "scenarios": [
@@ -207,14 +219,14 @@
     "notes": [
       [
         "recovery",
-        "Giữ một đường quay lại.",
-        "HỆ THỐNG",
-        "Bản sao lưu chỉ hữu ích khi có cách khôi phục thực tế. Tài khoản, cấu hình và những script nhỏ giúp công việc vận hành cũng cần được nhìn theo cách đó.",
-        "Trước khi thay đổi hệ thống, hãy giữ lại trạng thái đang hoạt động, ghi rõ điều sắp đổi và xác định cách hoàn tác. Việc khôi phục nên là điều một người có thể làm theo, không chỉ tồn tại trong trí nhớ của ai đó.",
+        "Hệ thống tốt chừa chỗ cho sai sót.",
+        "GHI CHÉP · 15.12.2025",
+        "Một lần mất dữ liệu khiến tôi đổi câu hỏi. Ngoài việc bảo vệ quyền truy cập, tôi cần biết mình sẽ quay lại bằng cách nào nếu những điểm tựa quen thuộc cùng biến mất.",
+        "Trong sổ tay cá nhân, tôi chia hệ thống thành ROOT, CORE, BRANCH và LEAF. Điều quan trọng với tôi là thứ tự ưu tiên và sự độc lập của đường khôi phục: bảo vệ nền tảng trước, dựng lại phần lõi sau, rồi mới đến những công cụ có thể thay thế.",
         [
-          "Xác định người sở hữu và cách khôi phục.",
-          "Lưu thay đổi quan trọng bằng cách dễ đọc.",
-          "Kiểm tra đường khôi phục trước khi dựa vào nó."
+          "Một đường khôi phục không nên phụ thuộc vào chính thứ đã mất.",
+          "Có bản sao là điểm bắt đầu; lấy lại được mới là điều cần kiểm tra.",
+          "Hướng dẫn cần đủ rõ cho cả lúc người sử dụng đang mệt hoặc bối rối."
         ]
       ],
       [
@@ -245,27 +257,33 @@
   },
   "zh": {
     "intro": [
-      "系统需要一条返回的路。",
-      "当人们能够理解、运行并恢复一个系统时，技术才真正有用。我从这三者之间的关系开始思考。"
+      "四个层次，四种优先级。",
+      "我区分恢复的基础、运行的核心，以及可以重建的部分。选择一个层次，了解它的作用。"
     ],
     "layers": [
       [
         "ROOT",
-        "保护基础。",
-        "明确域名、账号和源代码的所有权。增加服务前，先理清恢复路径和访问职责。",
-        "所有权 / 权限 / 恢复"
+        "恢复的支点。",
+        "基础身份与所有权需要独立的恢复路径。我让这一层保持精简，尽量减少对可能变化的服务的依赖。",
+        "身份 / 所有权 / 支点"
       ],
       [
         "CORE",
-        "让核心持续运行。",
-        "找出工作流程不可缺少的部分。选择有记录的配置、容易理解的工具，以及回到已知可用状态的办法。",
-        "运营 / 清晰 / 韧性"
+        "运行所需的核心。",
+        "让日常工作得以进行的部分，需要保护，也需要从外部恢复的路径。唯一的钥匙不应放在它所开启的盒子里。",
+        "访问 / 配置 / 恢复"
       ],
       [
-        "BRANCH + LEAF",
-        "只加入值得保留的部分。",
-        "新功能或视觉细节应该帮助人们做决定或完成任务。让扩展保持可分离，使核心在变化时仍能运行。",
-        "界面 / 实验 / 表达"
+        "BRANCH",
+        "可以重建的基础设施。",
+        "域名、服务和连接构成系统的延伸。我明确依赖关系与恢复路径，让这里的故障不必拖垮基础。",
+        "基础设施 / 依赖 / 替换"
+      ],
+      [
+        "LEAF",
+        "可以放下的工具。",
+        "应用和便利功能应该让工作更轻松。我让核心与数据保持足够独立，以便在工具不再适合时更换或放弃它。",
+        "工具 / 尝试 / 选择"
       ]
     ],
     "scenarios": [
@@ -329,14 +347,14 @@
     "notes": [
       [
         "recovery",
-        "始终保留退路。",
-        "系统",
-        "备份只有在能够实际恢复时才有价值。账号、配置和维持工作流程的小脚本也一样。",
-        "修改系统前，保留一个已知可用的状态，记录将要改变的内容，并决定如何撤销。恢复应该是他人能够遵循的过程，而不只是某个人脑中的记忆。",
+        "好的系统，容得下失误。",
+        "个人笔记 · 2025年12月15日",
+        "一次数据丢失改变了我的提问方式。除了保护访问权限，我也需要知道：如果几个熟悉的支点同时消失，该怎样回来。",
+        "在个人笔记中，我把系统分为 ROOT、CORE、BRANCH 和 LEAF。对我而言，重点是优先顺序与恢复路径的独立性：先保留基础，再重建核心，最后回到可以替换的工具。",
         [
-          "明确所有者与恢复路径。",
-          "以清晰的方式记录重要变更。",
-          "依赖备份前，先检查恢复方法。"
+          "恢复路径不应依赖于已经丢失的对象本身。",
+          "有副本只是开始；能否取回，仍需验证。",
+          "即使使用者疲惫或慌乱，说明也应该容易理解。"
         ]
       ],
       [
