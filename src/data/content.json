@@ -59,10 +59,10 @@
       },
       "principles": {
         "title": "Principles",
-        "description": "I make recovery part of the design from the start. Protect what matters, accept what can be replaced and keep one failure from taking everything with it.",
+        "description": "I design for controlled loss and recovery, rather than keeping everything at any cost.",
         "eyebrow": "Principles",
         "heading": "Design for<br/>a way back.",
-        "lead": "I make recovery part of the design from the start. Protect what matters, accept what can be replaced and keep one failure from taking everything with it.",
+        "lead": "I design for controlled loss and recovery, rather than keeping everything at any cost.",
         "quote": "A good system leaves room for human error.",
         "sections": [
           [
@@ -189,10 +189,10 @@
       },
       "principles": {
         "title": "Nguyên tắc",
-        "description": "Tôi đặt khả năng khôi phục vào trong thiết kế ngay từ đầu. Bảo vệ điều cốt lõi, chấp nhận phần có thể thay thế và giữ cho sự cố không kéo theo mọi thứ.",
+        "description": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
         "eyebrow": "Nguyên tắc",
         "heading": "Thiết kế để<br/>còn đường quay lại.",
-        "lead": "Tôi đặt khả năng khôi phục vào trong thiết kế ngay từ đầu. Bảo vệ điều cốt lõi, chấp nhận phần có thể thay thế và giữ cho sự cố không kéo theo mọi thứ.",
+        "lead": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
         "quote": "Hệ thống tốt không đòi hỏi con người hoàn hảo.",
         "sections": [
           [
@@ -319,10 +319,10 @@
       },
       "principles": {
         "title": "原则",
-        "description": "我从一开始就把恢复能力纳入设计。保护关键部分，接受可以替换的部分，避免一个故障带走整个系统。",
+        "description": "我的设计取向是接受可控的损失，并保留恢复能力，而不是不惜一切代价留住所有东西。",
         "eyebrow": "原则",
         "heading": "设计之初，<br/>就留好归路。",
-        "lead": "我从一开始就把恢复能力纳入设计。保护关键部分，接受可以替换的部分，避免一个故障带走整个系统。",
+        "lead": "我的设计取向是接受可控的损失，并保留恢复能力，而不是不惜一切代价留住所有东西。",
         "quote": "好的系统，为人的失误留有余地。",
         "sections": [
           [
