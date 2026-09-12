@@ -1,41 +1,12 @@
 ---
-const title = "Nguyen Dinh Thuyen";
+import Layout from '../layouts/Layout.astro';
 ---
-<!doctype html>
-<html lang="vi">
-  <head>
-    <meta charset="utf-8" />
-    <title>{title}</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-  </head>
-  <body>
-    <main>
-      <h1>Nguyen Dinh Thuyen</h1>
+<Layout title="Nguyễn Đình Thuyên — Hệ thống, công nghệ & góc nhìn" description="Không gian cá nhân của Nguyễn Đình Thuyên. Hệ thống, công nghệ và những điều cốt lõi." path="/" brand="personal">
 
-      <p>
-        Tối giản. Rõ ràng. Ưu tiên hệ thống sống sót hơn sự hoàn hảo.
-      </p>
+<section class="hero"><div><div class="eyebrow">Hệ thống · Công nghệ · Góc nhìn</div><h1>Nguyễn<br/>Đình Thuyên<span style="color:var(--accent)">.</span></h1><p class="lead">Tối giản để giữ lõi.<br/>Tôi làm việc với hệ thống, công nghệ và những ý tưởng có thể đi vào đời sống.</p><div class="hero-actions"><a class="button primary" href="mailto:hi@nguyenthuyen.vn">Trò chuyện cùng tôi <span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href="/about/">Đôi điều về tôi <span aria-hidden="true">→</span></a></div><span class="micro">RÕ RÀNG TRONG TƯ DUY. THỰC TẾ TRONG CÁCH LÀM.</span></div><div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orb"></div><div class="art-tag glass">Giữ điều cốt lõi.</div><div class="hero-display glass"><div class="display-head"><span>Một nguyên tắc nhỏ</span><span>ROOT → CORE</span></div><div class="display-row"><b>Đơn giản hơn.<br/>Vững vàng hơn.</b><span class="display-icon">↗</span></div></div><div class="art-caption">THÊM KHOẢNG TRỐNG CHO ĐIỀU QUAN TRỌNG</div></div></section>
+<div class="divider"><p>Một điểm kết nối cho công việc và đối thoại.</p><div class="expertise"><span>Công nghệ thông tin</span><span>Thiết kế hệ thống</span><span>Âm nhạc &amp; sáng tạo</span></div></div>
+<section class="section"><div class="section-heading"><div><div class="eyebrow">Những điều tôi làm</div><h2>Từ tư duy hệ thống<br/>đến công việc thực tế.</h2></div><p>Tôi quan tâm cách những phần khác nhau kết nối với nhau — và điều gì còn đứng vững khi điều kiện thay đổi.</p></div><div class="service-list"><div class="service-row"><span class="row-number">01</span><h3>Hệ thống &amp; công nghệ</h3><p>Tư vấn IT, hỗ trợ kỹ thuật và các hệ thống được thiết kế để dễ vận hành, dễ kiểm tra và có đường lui.</p><span aria-hidden="true">↗</span></div><div class="service-row"><span class="row-number">02</span><h3>DUNCAN SYSTEM LLC</h3><p>Tư vấn công nghệ thông tin và sửa chữa thiết bị điện tử. Một điểm kết nối cho các nhu cầu kỹ thuật thực tế.</p><span aria-hidden="true">↗</span></div><div class="service-row"><span class="row-number">03</span><h3>Diễn Viên Hiện Trên Biển</h3><p>Âm nhạc sinh từ đối thoại. Tối giản, chậm, nhiều khoảng trống — giữ lại những điều còn cần thiết.</p><span aria-hidden="true">↗</span></div></div></section>
+<section class="section story"><div><div class="eyebrow">Cách tôi nhìn mọi thứ</div><h2>Giữ lõi.<br/>Để phần thừa rơi đi.</h2><p>Tôi ưu tiên hệ thống có thể kiểm tra, có thể phục hồi và tiếp tục hoạt động trong những điều kiện không hoàn hảo.</p><a class="button secondary" href="/principles/">Những nguyên tắc của tôi <span aria-hidden="true">→</span></a></div><div><div class="principle"><span class="row-number">01</span><div><h3>Rõ ràng trước khi phức tạp</h3><p>Hiểu vấn đề, mục đích và điều thực sự cần được giải quyết.</p></div></div><div class="principle"><span class="row-number">02</span><div><h3>Luôn có đường lui</h3><p>Thiết kế với khả năng phục hồi, kiểm tra và thay đổi.</p></div></div><div class="principle"><span class="row-number">03</span><div><h3>Giữ điều cốt lõi</h3><p>Khi cần lựa chọn, ưu tiên phần giúp hệ thống tiếp tục sống.</p></div></div></div></section>
+<section class="contact-panel glass" aria-labelledby="contact-title"><div><div class="eyebrow">Kết nối trực tiếp</div><h2 id="contact-title">Một ý tưởng hay<br/>bắt đầu từ đối thoại.</h2><p>Một câu hỏi, một dự án, hay một góc nhìn mới.<br/>Gửi tôi vài dòng về điều bạn đang làm.</p></div><div class="contact-methods"><a href="mailto:hi@nguyenthuyen.vn">hi@nguyenthuyen.vn<span>Email ↗</span></a><a href="tel:+13079983948">+1 307 998 3948<span>Hoa Kỳ ↗</span></a><a href="tel:+84987123512">+84 987 123 512<span>Việt Nam ↗</span></a></div></section>
 
-      <nav>
-        <a href="/about">About</a> ·
-        <a href="/projects">Projects</a> ·
-        <a href="/principles">Principles</a>
-	<a href="/principles">Contact</a>
-      </nav>
-
-      <hr />
-
-      <section>
-        <h2>NOW</h2>
-        <p>
-          Tối giản để giữ lõi.<br />
-          Mọi phần thừa sẽ tự rơi.
-        </p>
-      </section>
-
-      <footer>
-        <small>© 2026 Nguyen Dinh Thuyen</small>
-      </footer>
-    </main>
-  </body>
-</html>
+</Layout>
