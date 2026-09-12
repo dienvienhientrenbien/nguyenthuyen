@@ -1,0 +1,10 @@
+/* Original vector identities; currentColor keeps the marks legible in both themes. */
+.brand-mark,.creative .brand-mark{width:48px;height:48px;flex:0 0 48px;display:block;background:none;border-radius:0;color:var(--ink);--logo-accent:var(--accent)}
+.brand-symbol{display:block;width:100%;height:100%}
+.brand{gap:13px;letter-spacing:-.025em}
+.brand-copy{min-width:0}.brand-name{display:block}.brand small{line-height:1.5;margin-top:5px}
+.corporate .brand-name{font-size:15px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;white-space:nowrap}
+.personal .brand-name{font-weight:600;font-size:17px;line-height:1.2}
+@media(max-width:1100px){.brand-mark,.creative .brand-mark{width:43px;height:43px;flex-basis:43px}.personal .brand-name{font-size:15px}}
+@media(max-width:480px){.brand{gap:8px}.brand-mark,.creative .brand-mark{width:36px;height:36px;flex-basis:36px}.corporate .brand-name{font-size:11px;letter-spacing:.035em}.personal .brand-name{font-size:12px;max-width:125px}}
+@media(max-width:359px){.brand-mark,.creative .brand-mark{width:30px;height:30px;flex-basis:30px}.corporate .brand-name{font-size:9px}.personal .brand-name{font-size:11px}}

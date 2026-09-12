@@ -1,0 +1,8 @@
+---
+const {brand='corporate'}=Astro.props;
+---
+<svg class="brand-symbol" viewBox="0 0 64 64" fill="none" aria-hidden="true" focusable="false">
+{brand==='corporate'&&<g><path fill="currentColor" d="M9 8h20c17 0 28 10 28 24 0 3-.5 5.8-1.5 8.4l-9.6-4.1c.3-1.3.5-2.7.5-4.3 0-9-6.2-14-17.4-14H19v23.7L9 46V8Zm0 44 10-4.3V48h10c6.3 0 11.1-1.6 14-4.7l9.7 4.1C47.7 54.2 39.5 58 29 58H9v-6Z"/><path d="m5 48 23-10 31 13" fill="none" stroke="var(--logo-accent,currentColor)" stroke-width="3.2" stroke-linejoin="round"/><circle cx="52" cy="10" r="3" fill="var(--logo-accent,currentColor)"/></g>}
+{brand==='personal'&&<g><path fill="currentColor" d="M8 53V11h8l24 29V19H29v-8h29v8H48v34h-8L16 24v29H8Z"/><path d="M23 54h8" stroke="var(--logo-accent,currentColor)" stroke-width="3"/><circle cx="55" cy="52" r="3" fill="var(--logo-accent,currentColor)"/></g>}
+{brand==='creative'&&<g><g fill="none" stroke="currentColor" stroke-width="2.8"><circle cx="32" cy="26" r="20"/><circle cx="32" cy="26" r="13"/><path d="M12 53c7-5 13-5 20 0s13 5 20 0" stroke-linecap="round"/></g><circle cx="32" cy="26" r="4" fill="currentColor"/></g>}
+</svg>
