@@ -1,5 +1,6 @@
 ---
 import data from '../data/content.json';
+import ContactChannels from '../components/ContactChannels.astro';
 import BrandMark from '../components/BrandMark.astro';
 const {title,description,page='home',lang='en',brand='corporate'}=Astro.props;
 const personal=brand==='personal', creative=brand==='creative', u=data.ui[lang];
@@ -9,7 +10,7 @@ const local=(slug='',language=lang)=>`${language==='en'?'':'/'+language}/${slug?
 const slug=['home','404'].includes(page)?'':page;
 const canonical=domain+local(slug);
 const nav=creative?[['music',u.music],['film',u.film],['about',u.about]]:personal?[['about',u.about],['projects',u.projects],['principles',u.principles],['notes',u.notes]]:[['solutions',u.services],['about',u.about],['contact',u.contact]];
-const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',name:legal,url:domain,email,telephone:'+84987123512'}:{'@context':'https://schema.org','@type':'Organization',name:legal,url:domain,email,telephone:'+13079983948',foundingDate:'2026-05-28',description:data.pages[lang].home.lead};
+const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',name:legal,url:domain,email,telephone:'+84987123512',sameAs:['https://www.facebook.com/dienvienhientrenbien','https://www.linkedin.com/in/nguyendinhthuyen/']}:{'@context':'https://schema.org','@type':'Organization',name:legal,url:domain,email,telephone:'+13079983948',foundingDate:'2026-05-28',description:data.pages[lang].home.lead};
 ---
 <!doctype html>
 <html lang={languageTags[lang]} data-brand={brand}>
@@ -18,7 +19,7 @@ const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',
  <meta name="description" content={description}/><title>{title}</title><link rel="canonical" href={canonical}/>
  {Object.entries(languageTags).map(([key,value])=><link rel="alternate" hreflang={value} href={domain+local(slug,key)}/>)}<link rel="alternate" hreflang="x-default" href={domain+local(slug,'en')}/>
  <meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={legal}/><meta property="og:image" content={domain+'/social.svg'}/><meta property="og:locale" content={{en:'en_US',vi:'vi_VN',zh:'zh_CN'}[lang]}/><meta name="theme-color" content={creative?'#f3f0e8':personal?'#f1f4f0':'#eff3f5'}/>
- <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2"/><link rel="stylesheet" href="/site.css"/><link rel="stylesheet" href="/experience.css"/><link rel="stylesheet" href="/identity.css"/>
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg?v=2"/><link rel="stylesheet" href="/site.css"/><link rel="stylesheet" href="/experience.css"/><link rel="stylesheet" href="/identity.css"/><link rel="stylesheet" href="/contact-channels.css"/>
  {page==='404'&&<meta name="robots" content="noindex"/>}
  <script type="application/ld+json" set:html={JSON.stringify(ld)}/>
  <script is:inline>try{const r=document.documentElement,s=JSON.parse(localStorage.getItem(`${r.dataset.brand}-appearance-v1`)||'null');const t=s&&['light','dark','system'].includes(s.theme)?s.theme:'system';r.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;if(s&&Number.isFinite(s.tint)){r.style.setProperty('--glass-tint',Math.max(0,Math.min(100,s.tint))/100);r.toggleAttribute('data-tint-opaque',s.tint===100)}}catch{}</script>
@@ -38,6 +39,6 @@ const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',
  <main id="main" class="shell"><slot/></main>
  <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links">{[['https://duncansystem.com','Duncan System'],['https://nguyenthuyen.vn','Nguyễn Đình Thuyên'],['https://dienvienhientrenbien.com','Diễn Viên Hiện Trên Biển']].filter(([url])=>url!==domain).map(([url,label])=><a href={url+local()} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}<a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
  <aside class="dock-wrap" aria-label={u.contact}><div class="shell"><div class="dock glass"><span><i class="dot"></i>{name}<span class="desktop-only"> / {(personal||creative)?u.personalDock:u.dock}</span></span><a href={local('contact')}>{u.contact} ↗</a></div></div></aside>
- <script is:inline src="/appearance.js" defer></script><script is:inline src="/experience.js" defer></script>
+ <ContactChannels lang={lang}/><script is:inline src="/contact-channels.js" defer></script><script is:inline src="/appearance.js" defer></script><script is:inline src="/experience.js" defer></script>
 </body>
 </html>

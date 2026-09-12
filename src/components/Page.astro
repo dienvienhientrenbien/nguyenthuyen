@@ -4,6 +4,7 @@ import HeroScene from './HeroScene.astro';
 import Experience from './Experience.astro';
 import Brief from './Brief.astro';
 import data from '../data/content.json';
+import ContactChannels from './ContactChannels.astro';
 const { page='home', lang='en' } = Astro.props;
 const d=data.pages[lang][page], u=data.ui[lang], brand=data.brand;
 const personal=brand==='personal',creative=brand==='creative';
@@ -34,4 +35,5 @@ const description=d.description||`${d.title} — ${brandName}`;
 {page==='404'&&<div class="error-action"><a class="button primary" href={local()}>{u.back}<span aria-hidden="true">→</span></a></div>}
 
 {!['404','privacy','principles'].includes(page)&&<section class="contact-panel glass" aria-labelledby="contact-title"><div><div class="eyebrow">{contact[0]}</div><h2 id="contact-title" set:html={contact[1]}/><p>{contact[2]}</p></div><div class="contact-methods"><a href={`mailto:${email}`}>{email}<span>{u.email} ↗</span></a>{!creative&&<><a href="tel:+13079983948">+1 307 998 3948<span>{u.us} ↗</span></a><a href="tel:+84987123512">+84 987 123 512<span>{u.vn} ↗</span></a></>}</div></section>}
+{page==='contact'&&<ContactChannels lang={lang} inline={true}/>}
 </Layout>
