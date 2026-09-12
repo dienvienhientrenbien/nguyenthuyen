@@ -1,37 +1,45 @@
 ---
-const { title, description, path = '/', brand = 'corporate' } = Astro.props;
-const personal = brand === 'personal';
-const name = personal ? 'Nguyễn Đình Thuyên' : 'Duncan System';
-const legal = personal ? 'Nguyễn Đình Thuyên' : 'DUNCAN SYSTEM LLC';
-const domain = personal ? 'https://nguyenthuyen.vn' : 'https://duncansystem.com';
-const email = personal ? 'hi@nguyenthuyen.vn' : 'contact@duncansystem.com';
-const nav = personal ? [['/about/','Giới thiệu'],['/projects/','Công việc'],['/principles/','Nguyên tắc']] : [['/solutions/','Services'],['/about/','About'],['/contact/','Contact']];
-const ld = personal ? { '@context':'https://schema.org', '@type':'Person', name:legal, url:domain, email, telephone:'+84987123512' } : {'@context':'https://schema.org','@type':'Organization',name:legal,url:domain,email,telephone:'+13079983948',description:'IT consulting and electronics repair services.'};
+import data from '../data/content.json';
+const {title,description,page='home',lang='en',brand='corporate'}=Astro.props;
+const personal=brand==='personal', u=data.ui[lang];
+const name=personal?'Nguyễn Đình Thuyên':'Duncan System';
+const legal=personal?'Nguyễn Đình Thuyên':'DUNCAN SYSTEM LLC';
+const domain=personal?'https://nguyenthuyen.vn':'https://duncansystem.com';
+const email=personal?'hi@nguyenthuyen.vn':'contact@duncansystem.com';
+const languageTags={en:'en',vi:'vi',zh:'zh-Hans'};
+const local=(slug='',language=lang)=>`${language==='en'?'':'/'+language}/${slug?slug+'/':''}`;
+const slug=page==='home'?'':page;
+const canonical=domain+local(slug);
+const nav=personal?[['about',u.about],['projects',u.projects],['principles',u.principles]]:[['solutions',u.services],['about',u.about],['contact',u.contact]];
+const ld=personal?{'@context':'https://schema.org','@type':'Person',name:legal,url:domain,email,telephone:'+84987123512'}:{'@context':'https://schema.org','@type':'Organization',name:legal,url:domain,email,telephone:'+13079983948',foundingDate:'2026-05-28',description:data.pages[lang].home.lead};
 ---
 <!doctype html>
-<html lang={personal?'vi':'en'} data-brand={brand}>
- <head>
-  <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
-  <meta name="description" content={description}/><title>{title}</title><link rel="canonical" href={domain+path}/>
-  <meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={domain+path}/><meta property="og:site_name" content={legal}/><meta property="og:image" content={domain+'/social.svg'}/><meta name="theme-color" content={personal?'#f1f4f0':'#eff3f5'}/>
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="stylesheet" href="/site.css"/>
-  <script type="application/ld+json" set:html={JSON.stringify(ld)}/>
-  <script is:inline>try{const r=document.documentElement,s=JSON.parse(localStorage.getItem(`${r.dataset.brand}-appearance-v1`)||'null');const t=s&&['light','dark','system'].includes(s.theme)?s.theme:'system';r.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;if(s&&Number.isFinite(s.tint)){r.style.setProperty('--glass-tint',Math.max(0,Math.min(100,s.tint))/100);r.toggleAttribute('data-tint-opaque',s.tint===100)}}catch{}</script>
- </head>
- <body class={personal?'personal':'corporate'}>
-  <a class="skip-link" href="#main">{personal?'Đến nội dung chính':'Skip to content'}</a><div class="ambient" aria-hidden="true"></div>
-  <header class="header-wrap shell"><div class="topbar glass">
-   <a class="brand" href="/" aria-label={legal}><span class="brand-mark" aria-hidden="true">{personal?'t.':'d.'}</span><span>{name}<small>{personal?'Systems · Perspective':'Technology & Consulting'}</small></span></a>
-   <nav class="desktop-nav" aria-label={personal?'Điều hướng chính':'Main navigation'}>{nav.map(([href,label])=><a href={href} aria-current={path===href?'page':undefined}>{label}</a>)}</nav>
-   <div class="nav-actions">
-    <details class="preferences"><summary aria-label={personal?'Tùy chỉnh giao diện':'Appearance settings'} title={personal?'Giao diện':'Appearance'}>◐</summary><div class="preferences-panel"><h2>{personal?'Giao diện':'Appearance'}</h2><fieldset><legend>{personal?'Chế độ màu':'Color mode'}</legend><div class="theme-options">{(personal?[['light','Sáng'],['dark','Tối'],['system','Tự động']]:[['light','Light'],['dark','Dark'],['system','Auto']]).map(([value,label])=><label><input type="radio" name="theme" value={value}/><span>{label}</span></label>)}</div></fieldset><label class="range-label" for="glass-tint">{personal?'Độ đục kính':'Glass opacity'}<output id="tint-value" for="glass-tint">35%</output></label><input id="glass-tint" type="range" min="0" max="100" value="35"/><p class="preferences-note">{personal?'Ghi nhớ trên thiết bị này. Ưu tiên tùy chọn trợ năng của hệ thống.':'Saved on this device. System accessibility preferences take priority.'}</p></div></details>
-    <a class="button primary small nav-contact" href={'mailto:'+email}>{personal?'Liên hệ':'Get in touch'} <span aria-hidden="true">↗</span></a>
-    <details class="mobile-nav"><summary aria-label={personal?'Mở menu':'Open menu'}>☰</summary><nav class="mobile-panel" aria-label={personal?'Điều hướng di động':'Mobile navigation'}>{nav.map(([href,label])=><a href={href} aria-current={path===href?'page':undefined}>{label}</a>)}<a href="/contact/">{personal?'Liên hệ':'Get in touch'}</a></nav></details>
-   </div>
-  </div></header>
-  <main id="main" class="shell"><slot/></main>
-  <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {personal?'Giữ điều cốt lõi.':'All rights reserved.'}</span><div class="footer-links"><a href={personal?'https://duncansystem.com':'https://nguyenthuyen.vn'}>{personal?'DUNCAN SYSTEM LLC':'Nguyễn Đình Thuyên'} ↗</a><a href="/privacy/">{personal?'Quyền riêng tư':'Privacy'}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
-  <div class="dock-wrap"><div class="shell"><div class="dock glass"><span><i class="dot"></i>{personal?'NGUYỄN ĐÌNH THUYÊN':'DUNCAN SYSTEM LLC'}<span class="desktop-only"> &nbsp; / &nbsp; {personal?'Rõ ràng từ tư duy đến hệ thống.':'Practical technology. Thoughtful support.'}</span></span><a href="/contact/">{personal?'Bắt đầu một cuộc trò chuyện':'Let’s talk'} ↗</a></div></div></div>
-  <script is:inline src="/appearance.js" defer></script>
- </body>
+<html lang={languageTags[lang]} data-brand={brand}>
+<head>
+ <meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+ <meta name="description" content={description}/><title>{title}</title><link rel="canonical" href={canonical}/>
+ {Object.entries(languageTags).map(([key,value])=><link rel="alternate" hreflang={value} href={domain+local(slug,key)}/>)}<link rel="alternate" hreflang="x-default" href={domain+local(slug,'en')}/>
+ <meta property="og:type" content="website"/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:url" content={canonical}/><meta property="og:site_name" content={legal}/><meta property="og:image" content={domain+'/social.svg'}/><meta property="og:locale" content={{en:'en_US',vi:'vi_VN',zh:'zh_CN'}[lang]}/><meta name="theme-color" content={personal?'#f1f4f0':'#eff3f5'}/>
+ <link rel="icon" type="image/svg+xml" href="/favicon.svg"/><link rel="stylesheet" href="/site.css"/>
+ {page==='404'&&<meta name="robots" content="noindex"/>}
+ <script type="application/ld+json" set:html={JSON.stringify(ld)}/>
+ <script is:inline>try{const r=document.documentElement,s=JSON.parse(localStorage.getItem(`${r.dataset.brand}-appearance-v1`)||'null');const t=s&&['light','dark','system'].includes(s.theme)?s.theme:'system';r.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;if(s&&Number.isFinite(s.tint)){r.style.setProperty('--glass-tint',Math.max(0,Math.min(100,s.tint))/100);r.toggleAttribute('data-tint-opaque',s.tint===100)}}catch{}</script>
+</head>
+<body class={personal?'personal':'corporate'}>
+ <a class="skip-link" href="#main">{u.skip}</a><div class="ambient" aria-hidden="true"></div>
+ <header class="header-wrap shell"><div class="topbar glass">
+  <a class="brand" href={local()} aria-label={legal}><span class="brand-mark" aria-hidden="true">{personal?'t.':'d.'}</span><span>{name}<small>{personal?u.personalTag:u.brandTag}</small></span></a>
+  <nav class="desktop-nav" aria-label={u.mainNav}>{nav.map(([route,label])=><a href={local(route)} aria-current={page===route?'page':undefined}>{label}</a>)}</nav>
+  <div class="nav-actions">
+   <details class="language-picker"><summary aria-label={u.language}><span>{lang==='zh'?'中文':lang.toUpperCase()}</span><span aria-hidden="true">⌄</span></summary><nav class="language-panel" aria-label={u.language}>{[['en','English'],['vi','Tiếng Việt'],['zh','简体中文']].map(([key,label])=><a href={local(slug,key)} lang={languageTags[key]} hreflang={languageTags[key]} aria-current={lang===key?'page':undefined}>{label}<span aria-hidden="true">{lang===key?'✓':''}</span></a>)}</nav></details>
+   <details class="preferences"><summary aria-label={u.appearanceLabel} title={u.appearance}>◐</summary><div class="preferences-panel"><h2>{u.appearance}</h2><fieldset><legend>{u.mode}</legend><div class="theme-options">{[['light',u.light],['dark',u.dark],['system',u.system]].map(([value,label])=><label><input type="radio" name="theme" value={value}/><span>{label}</span></label>)}</div></fieldset><label class="range-label" for="glass-tint">{u.opacity}<output id="tint-value" for="glass-tint">35%</output></label><input id="glass-tint" type="range" min="0" max="100" value="35"/><p class="preferences-note">{u.saved}</p></div></details>
+   <a class="button primary small nav-contact" href={local('contact')}>{u.talk}<span aria-hidden="true">↗</span></a>
+   <details class="mobile-nav"><summary aria-label={u.menu}>☰</summary><nav class="mobile-panel" aria-label={u.mobileNav}>{nav.map(([route,label])=><a href={local(route)} aria-current={page===route?'page':undefined}>{label}</a>)}{personal&&<a href={local('contact')}>{u.contact}</a>}</nav></details>
+  </div>
+ </div></header>
+ <main id="main" class="shell"><slot/></main>
+ <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links"><a href={(personal?'https://duncansystem.com':'https://nguyenthuyen.vn')+local()}>{personal?'DUNCAN SYSTEM LLC':'Nguyễn Đình Thuyên'} ↗</a><a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
+ <aside class="dock-wrap" aria-label={u.contact}><div class="shell"><div class="dock glass"><span><i class="dot"></i>{personal?'NGUYỄN ĐÌNH THUYÊN':'DUNCAN SYSTEM LLC'}<span class="desktop-only"> / {personal?u.personalDock:u.dock}</span></span><a href={local('contact')}>{u.contact} ↗</a></div></div></aside>
+ <script is:inline src="/appearance.js" defer></script>
+</body>
 </html>

@@ -1,0 +1,586 @@
+{
+  "brand": "personal",
+  "pages": {
+    "en": {
+      "home": {
+        "title": "Systems, Technology & Perspective",
+        "description": "Keep the essentials. I work with systems, technology and ideas that can become useful in everyday life.",
+        "eyebrow": "SYSTEMS · TECHNOLOGY · PERSPECTIVE",
+        "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
+        "lead": "Keep the essentials. I work with systems, technology and ideas that can become useful in everyday life.",
+        "cta": "Start a conversation",
+        "secondary": "A little about me",
+        "micro": "CLEAR THINKING. PRACTICAL WORK.",
+        "tag": "Keep the essentials.",
+        "displayLabel": "A small principle",
+        "display": "Simpler.<br/>More resilient.",
+        "caption": "MAKE ROOM FOR WHAT MATTERS",
+        "divider": "A point of connection for work and conversation.",
+        "expertise": [
+          "Technology",
+          "System design",
+          "Music & creativity"
+        ],
+        "sectionLabel": "What I work on",
+        "sectionHeading": "From systems thinking<br/>to practical work.",
+        "sectionText": "I am interested in how different parts connect, and what keeps working when conditions change.",
+        "storyLabel": "How I approach things",
+        "storyHeading": "Keep the core.<br/>Let the excess go.",
+        "storyText": "I value systems that can be understood, checked and recovered when conditions are imperfect.",
+        "storyCta": "My principles"
+      },
+      "about": {
+        "title": "About",
+        "description": "I’m Nguyễn Đình Thuyên. I work with technology, operations and structures that can keep going when conditions are imperfect.",
+        "eyebrow": "A little about me",
+        "heading": "Understand the system.<br/>Keep the essentials.",
+        "lead": "I’m Nguyễn Đình Thuyên. I work with technology, operations and structures that can keep going when conditions are imperfect.",
+        "sections": [
+          [
+            "A practical approach",
+            "I care about preserving a way back, avoiding unnecessary lock-in and protecting the core when something fails. Technology, operations and creativity all begin with context, clear questions and room to adjust."
+          ],
+          [
+            "A point of connection",
+            "This site introduces my approach, areas of work and direct contact details. For maritime Internet and onboard technology inquiries, visit DUNCAN SYSTEM LLC."
+          ]
+        ]
+      },
+      "projects": {
+        "title": "Work",
+        "description": "Technology and creativity meet in the questions we ask, the connections we make and the essentials we choose to keep.",
+        "eyebrow": "Work & projects",
+        "heading": "Different directions.<br/>One way of thinking.",
+        "lead": "Technology and creativity meet in the questions we ask, the connections we make and the essentials we choose to keep."
+      },
+      "principles": {
+        "title": "Principles",
+        "description": "I design around controlled loss and recovery, rather than trying to preserve everything at any cost.",
+        "eyebrow": "Principles",
+        "heading": "A system needs<br/>a way back.",
+        "lead": "I design around controlled loss and recovery, rather than trying to preserve everything at any cost.",
+        "quote": "Security should protect access without locking out the person it serves.",
+        "sections": [
+          [
+            "ROOT",
+            "The foundation to protect. Without it, the system cannot continue."
+          ],
+          [
+            "CORE",
+            "The essential operating parts. Losing them stops the system."
+          ],
+          [
+            "BRANCH",
+            "Useful extensions. The system can continue without them."
+          ],
+          [
+            "LEAF",
+            "Presentation and decoration. Let them go when necessary."
+          ]
+        ],
+        "closing": "When a trade-off is unavoidable, protect ROOT and CORE first."
+      },
+      "contact": {
+        "title": "Contact",
+        "description": "Email is the main way to reach me. Include the context, purpose and timing so we can begin with a clear picture.",
+        "eyebrow": "Direct contact",
+        "heading": "Start with<br/>a conversation.",
+        "lead": "Email is the main way to reach me. Include the context, purpose and timing so we can begin with a clear picture."
+      },
+      "privacy": {
+        "title": "Privacy",
+        "description": "",
+        "eyebrow": "Privacy",
+        "heading": "Direct contact.<br/>Clear information.",
+        "lead": "",
+        "sections": [
+          [
+            "This website",
+            "This personal website provides information and email or telephone links. It has no account registration, advertising trackers or contact-data collection form."
+          ],
+          [
+            "When you contact me",
+            "Information you choose to send is used to respond and discuss your request. Send only the information relevant to the conversation."
+          ],
+          [
+            "Website operation",
+            "The hosting provider may process basic technical data to deliver and protect the website. Appearance preferences are stored only in your browser. Language is selected through the page URL."
+          ],
+          [
+            "Questions",
+            "For questions about information you have sent, email hi@nguyenthuyen.vn."
+          ]
+        ]
+      },
+      "404": {
+        "title": "Page not found",
+        "description": "Return to the homepage to find your way.",
+        "eyebrow": "404",
+        "heading": "This page<br/>is not here.",
+        "lead": "Return to the homepage to find your way."
+      }
+    },
+    "vi": {
+      "home": {
+        "title": "Hệ thống, công nghệ & góc nhìn",
+        "description": "Tối giản để giữ lõi. Tôi làm việc với hệ thống, công nghệ và những ý tưởng có thể đi vào đời sống.",
+        "eyebrow": "HỆ THỐNG · CÔNG NGHỆ · GÓC NHÌN",
+        "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
+        "lead": "Tối giản để giữ lõi. Tôi làm việc với hệ thống, công nghệ và những ý tưởng có thể đi vào đời sống.",
+        "cta": "Trò chuyện cùng tôi",
+        "secondary": "Đôi điều về tôi",
+        "micro": "RÕ RÀNG TRONG TƯ DUY. THỰC TẾ TRONG CÁCH LÀM.",
+        "tag": "Giữ điều cốt lõi.",
+        "displayLabel": "Một nguyên tắc nhỏ",
+        "display": "Đơn giản hơn.<br/>Vững vàng hơn.",
+        "caption": "THÊM KHOẢNG TRỐNG CHO ĐIỀU QUAN TRỌNG",
+        "divider": "Một điểm kết nối cho công việc và đối thoại.",
+        "expertise": [
+          "Công nghệ",
+          "Thiết kế hệ thống",
+          "Âm nhạc & sáng tạo"
+        ],
+        "sectionLabel": "Những điều tôi làm",
+        "sectionHeading": "Từ tư duy hệ thống<br/>đến công việc thực tế.",
+        "sectionText": "Tôi quan tâm cách các phần kết nối với nhau, và điều gì còn đứng vững khi điều kiện thay đổi.",
+        "storyLabel": "Cách tôi nhìn mọi thứ",
+        "storyHeading": "Giữ lõi.<br/>Để phần thừa rơi đi.",
+        "storyText": "Tôi ưu tiên hệ thống có thể hiểu, kiểm tra và phục hồi trong những điều kiện không hoàn hảo.",
+        "storyCta": "Nguyên tắc của tôi"
+      },
+      "about": {
+        "title": "Giới thiệu",
+        "description": "Tôi là Nguyễn Đình Thuyên. Tôi làm việc với công nghệ, vận hành và những cấu trúc có thể tiếp tục hoạt động trong điều kiện không hoàn hảo.",
+        "eyebrow": "Đôi điều về tôi",
+        "heading": "Hiểu hệ thống.<br/>Giữ điều cốt lõi.",
+        "lead": "Tôi là Nguyễn Đình Thuyên. Tôi làm việc với công nghệ, vận hành và những cấu trúc có thể tiếp tục hoạt động trong điều kiện không hoàn hảo.",
+        "sections": [
+          [
+            "Một cách làm thực tế",
+            "Tôi quan tâm đến việc giữ đường lui, tránh tự khóa mình và bảo toàn phần lõi khi mọi thứ hỏng. Công nghệ, vận hành và sáng tạo đều bắt đầu từ bối cảnh, câu hỏi rõ ràng và khoảng trống để điều chỉnh."
+          ],
+          [
+            "Một điểm kết nối",
+            "Website giới thiệu cách tôi làm việc, các hướng công việc và kênh liên hệ trực tiếp. Với nhu cầu Internet hàng hải và công nghệ trên tàu, hãy xem DUNCAN SYSTEM LLC."
+          ]
+        ]
+      },
+      "projects": {
+        "title": "Công việc",
+        "description": "Công nghệ và sáng tạo gặp nhau ở cách đặt câu hỏi, kết nối các phần và giữ lại điều cần thiết.",
+        "eyebrow": "Công việc & dự án",
+        "heading": "Những hướng đi.<br/>Cùng một tư duy.",
+        "lead": "Công nghệ và sáng tạo gặp nhau ở cách đặt câu hỏi, kết nối các phần và giữ lại điều cần thiết."
+      },
+      "principles": {
+        "title": "Nguyên tắc",
+        "description": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
+        "eyebrow": "Nguyên tắc",
+        "heading": "Hệ thống cần<br/>một đường lui.",
+        "lead": "Tôi thiết kế theo hướng chấp nhận mất mát có kiểm soát và có khả năng phục hồi, thay vì giữ mọi thứ bằng mọi giá.",
+        "quote": "Bảo mật cần bảo vệ quyền truy cập mà không tự khóa người sử dụng.",
+        "sections": [
+          [
+            "ROOT",
+            "Gốc phải được bảo toàn. Nếu mất, hệ thống không thể tiếp tục."
+          ],
+          [
+            "CORE",
+            "Phần lõi vận hành. Mất CORE là hệ thống dừng."
+          ],
+          [
+            "BRANCH",
+            "Phần mở rộng hữu ích. Mất vẫn có thể tiếp tục vận hành."
+          ],
+          [
+            "LEAF",
+            "Phần trình bày, trang trí. Chấp nhận bỏ khi cần."
+          ]
+        ],
+        "closing": "Khi buộc phải lựa chọn, ưu tiên bảo vệ ROOT và CORE."
+      },
+      "contact": {
+        "title": "Liên hệ",
+        "description": "Email là kênh liên hệ chính. Gửi tôi bối cảnh, mục đích và thời hạn để cuộc trao đổi bắt đầu rõ ràng.",
+        "eyebrow": "Liên hệ trực tiếp",
+        "heading": "Bắt đầu từ<br/>một cuộc trò chuyện.",
+        "lead": "Email là kênh liên hệ chính. Gửi tôi bối cảnh, mục đích và thời hạn để cuộc trao đổi bắt đầu rõ ràng."
+      },
+      "privacy": {
+        "title": "Quyền riêng tư",
+        "description": "",
+        "eyebrow": "Quyền riêng tư",
+        "heading": "Liên hệ trực tiếp.<br/>Thông tin rõ ràng.",
+        "lead": "",
+        "sections": [
+          [
+            "Website này",
+            "Website cá nhân cung cấp thông tin cùng liên kết email, điện thoại. Không có đăng ký tài khoản, công cụ theo dõi quảng cáo hay biểu mẫu thu thập thông tin liên hệ."
+          ],
+          [
+            "Khi bạn liên hệ",
+            "Thông tin bạn chủ động gửi được dùng để phản hồi và trao đổi về yêu cầu. Chỉ gửi thông tin cần thiết cho cuộc trao đổi."
+          ],
+          [
+            "Cách website hoạt động",
+            "Nhà cung cấp lưu trữ có thể xử lý dữ liệu kỹ thuật cơ bản để cung cấp và bảo vệ website. Tùy chọn giao diện chỉ lưu trong trình duyệt; ngôn ngữ được xác định qua địa chỉ trang."
+          ],
+          [
+            "Câu hỏi",
+            "Nếu có câu hỏi về thông tin đã gửi, vui lòng liên hệ hi@nguyenthuyen.vn."
+          ]
+        ]
+      },
+      "404": {
+        "title": "Không tìm thấy trang",
+        "description": "Về trang chủ để tìm nội dung bạn cần.",
+        "eyebrow": "404",
+        "heading": "Trang này<br/>chưa có ở đây.",
+        "lead": "Về trang chủ để tìm nội dung bạn cần."
+      }
+    },
+    "zh": {
+      "home": {
+        "title": "系统、技术与视角",
+        "description": "保留核心。我关注系统、技术，以及能在日常生活中发挥作用的想法。",
+        "eyebrow": "系统 · 技术 · 视角",
+        "heading": "Nguyễn<br/>Đình Thuyên<span class=\"accent\">.</span>",
+        "lead": "保留核心。我关注系统、技术，以及能在日常生活中发挥作用的想法。",
+        "cta": "开始交流",
+        "secondary": "关于我",
+        "micro": "清晰思考，务实做事。",
+        "tag": "保留核心。",
+        "displayLabel": "一个小原则",
+        "display": "更简单。<br/>更有韧性。",
+        "caption": "为重要的事留出空间",
+        "divider": "连接工作与交流的一个起点。",
+        "expertise": [
+          "技术",
+          "系统设计",
+          "音乐与创作"
+        ],
+        "sectionLabel": "工作方向",
+        "sectionHeading": "从系统思考<br/>到实际工作。",
+        "sectionText": "我关注各部分如何连接，以及条件变化时，什么仍能可靠运行。",
+        "storyLabel": "我的思考方式",
+        "storyHeading": "保留核心。<br/>减少冗余。",
+        "storyText": "我重视在不完美的条件下，仍然可以理解、检查和恢复的系统。",
+        "storyCta": "我的原则"
+      },
+      "about": {
+        "title": "关于我",
+        "description": "我是 Nguyễn Đình Thuyên。我关注技术、运营，以及能在不完美条件下继续运行的系统。",
+        "eyebrow": "关于我",
+        "heading": "理解系统。<br/>保留核心。",
+        "lead": "我是 Nguyễn Đình Thuyên。我关注技术、运营，以及能在不完美条件下继续运行的系统。",
+        "sections": [
+          [
+            "务实的方法",
+            "保留退路、避免不必要的绑定，并在发生故障时保护核心，是我关心的事。技术、运营和创作都从理解背景、提出清晰问题及保留调整空间开始。"
+          ],
+          [
+            "一个交流起点",
+            "本网站介绍我的方法、工作方向和直接联系方式。如需海事互联网及船载技术服务，请了解 DUNCAN SYSTEM LLC。"
+          ]
+        ]
+      },
+      "projects": {
+        "title": "工作",
+        "description": "技术与创作相遇于提出的问题、建立的连接，以及选择保留的核心。",
+        "eyebrow": "工作与项目",
+        "heading": "不同方向。<br/>共同的思考方式。",
+        "lead": "技术与创作相遇于提出的问题、建立的连接，以及选择保留的核心。"
+      },
+      "principles": {
+        "title": "原则",
+        "description": "我重视可控损失与恢复能力，而不是不惜代价地保留一切。",
+        "eyebrow": "原则",
+        "heading": "系统需要<br/>一条退路。",
+        "lead": "我重视可控损失与恢复能力，而不是不惜代价地保留一切。",
+        "quote": "安全应当保护访问权，而不是把使用者锁在门外。",
+        "sections": [
+          [
+            "ROOT",
+            "必须保护的根基。失去它，系统就无法继续。"
+          ],
+          [
+            "CORE",
+            "维持运行的核心部分。失去它，系统就会停止。"
+          ],
+          [
+            "BRANCH",
+            "有用的扩展。没有它们，系统仍可继续。"
+          ],
+          [
+            "LEAF",
+            "呈现与装饰。必要时可以舍弃。"
+          ]
+        ],
+        "closing": "当取舍不可避免时，优先保护 ROOT 和 CORE。"
+      },
+      "contact": {
+        "title": "联系",
+        "description": "电子邮件是主要联系方式。请说明背景、目的和时间要求，便于清晰地展开讨论。",
+        "eyebrow": "直接联系",
+        "heading": "从一次<br/>交流开始。",
+        "lead": "电子邮件是主要联系方式。请说明背景、目的和时间要求，便于清晰地展开讨论。"
+      },
+      "privacy": {
+        "title": "隐私",
+        "description": "",
+        "eyebrow": "隐私说明",
+        "heading": "直接联系。<br/>清晰说明。",
+        "lead": "",
+        "sections": [
+          [
+            "本网站",
+            "本个人网站提供信息以及电子邮件和电话链接。不提供账户注册，不设置广告追踪工具或联系信息收集表单。"
+          ],
+          [
+            "当您联系我时",
+            "您主动提供的信息用于回复及讨论您的请求。请仅发送与交流相关的信息。"
+          ],
+          [
+            "网站运行",
+            "托管服务商可能处理提供与保护网站所需的基本技术数据。外观偏好仅保存在您的浏览器中；语言由页面地址确定。"
+          ],
+          [
+            "如有疑问",
+            "有关您已发送信息的问题，请联系 hi@nguyenthuyen.vn。"
+          ]
+        ]
+      },
+      "404": {
+        "title": "未找到页面",
+        "description": "请返回首页查找需要的内容。",
+        "eyebrow": "404",
+        "heading": "此页面<br/>暂不可用。",
+        "lead": "请返回首页查找需要的内容。"
+      }
+    }
+  },
+  "items": {
+    "en": [
+      [
+        "Systems & technology",
+        "IT consulting, technical support and systems designed to be understandable, maintainable and recoverable."
+      ],
+      [
+        "DUNCAN SYSTEM LLC",
+        "A new company focused on maritime Internet, onboard networks and CCTV, with GMDSS and bridge electronics support scoped for each job."
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "Music shaped through conversation. Minimal, unhurried and spacious, keeping what matters."
+      ]
+    ],
+    "vi": [
+      [
+        "Hệ thống & công nghệ",
+        "Tư vấn IT, hỗ trợ kỹ thuật và hệ thống được thiết kế để dễ hiểu, dễ vận hành và có khả năng phục hồi."
+      ],
+      [
+        "DUNCAN SYSTEM LLC",
+        "Công ty mới, tập trung Internet hàng hải, mạng trên tàu và CCTV; hỗ trợ GMDSS cùng thiết bị buồng lái theo phạm vi từng công việc."
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "Âm nhạc sinh từ đối thoại. Tối giản, chậm, nhiều khoảng trống, giữ lại điều cần thiết."
+      ]
+    ],
+    "zh": [
+      [
+        "系统与技术",
+        "IT 咨询、技术支持，以及易于理解、维护和恢复的系统。"
+      ],
+      [
+        "DUNCAN SYSTEM LLC",
+        "一家新公司，专注于海事互联网、船载网络和视频监控，并按具体工作范围提供 GMDSS 与驾驶台电子设备支持。"
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "从交流中生长的音乐。简约、舒缓、留有空间，保留重要的部分。"
+      ]
+    ]
+  },
+  "steps": {
+    "en": [
+      [
+        "Clarity before complexity",
+        "Understand the problem, the purpose and what needs to be solved."
+      ],
+      [
+        "Keep a way back",
+        "Build with recovery, inspection and change in mind."
+      ],
+      [
+        "Keep the essentials",
+        "Prioritize what allows the system to continue."
+      ]
+    ],
+    "vi": [
+      [
+        "Rõ ràng trước khi phức tạp",
+        "Hiểu vấn đề, mục đích và điều cần giải quyết."
+      ],
+      [
+        "Luôn có đường lui",
+        "Thiết kế với khả năng phục hồi, kiểm tra và thay đổi."
+      ],
+      [
+        "Giữ điều cốt lõi",
+        "Ưu tiên phần giúp hệ thống tiếp tục hoạt động."
+      ]
+    ],
+    "zh": [
+      [
+        "先清晰，再复杂",
+        "理解问题、目的以及真正需要解决的事。"
+      ],
+      [
+        "始终保留退路",
+        "设计时考虑恢复、检查与变化。"
+      ],
+      [
+        "保留核心",
+        "优先保护使系统得以继续运行的部分。"
+      ]
+    ]
+  },
+  "contacts": {
+    "en": {
+      "corporate": [
+        "Plan your next project",
+        "Let’s connect<br/>your vessel.",
+        "Share your vessel’s routes, current equipment and service needs. We’ll discuss the options and agree on the scope."
+      ],
+      "personal": [
+        "Direct connection",
+        "A good idea starts<br/>with a conversation.",
+        "A question, a project or a new perspective. Send me a few lines about what you’re working on."
+      ]
+    },
+    "vi": {
+      "corporate": [
+        "Chuẩn bị công việc tiếp theo",
+        "Cùng kết nối<br/>con tàu của bạn.",
+        "Chia sẻ tuyến hoạt động, thiết bị hiện có và nhu cầu dịch vụ. Chúng tôi sẽ trao đổi phương án và thống nhất phạm vi."
+      ],
+      "personal": [
+        "Kết nối trực tiếp",
+        "Một ý tưởng hay<br/>bắt đầu từ đối thoại.",
+        "Một câu hỏi, một dự án hay một góc nhìn mới. Gửi tôi vài dòng về điều bạn đang làm."
+      ]
+    },
+    "zh": {
+      "corporate": [
+        "规划下一项工作",
+        "连接<br/>您的船舶。",
+        "请介绍航线、现有设备和服务需求。我们将讨论方案并明确工作范围。"
+      ],
+      "personal": [
+        "直接交流",
+        "好的想法<br/>始于交流。",
+        "一个问题、一个项目，或一种新视角。欢迎写信介绍您正在做的事。"
+      ]
+    }
+  },
+  "ui": {
+    "en": {
+      "home": "Home",
+      "services": "Services",
+      "about": "About",
+      "contact": "Contact",
+      "projects": "Work",
+      "principles": "Principles",
+      "privacy": "Privacy",
+      "appearance": "Appearance",
+      "appearanceLabel": "Appearance settings",
+      "mode": "Color mode",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "Auto",
+      "opacity": "Glass opacity",
+      "saved": "Saved on this device. System accessibility preferences take priority.",
+      "skip": "Skip to content",
+      "menu": "Open menu",
+      "mainNav": "Main navigation",
+      "mobileNav": "Mobile navigation",
+      "language": "Language",
+      "talk": "Get in touch",
+      "us": "United States",
+      "vn": "Vietnam",
+      "back": "Back to home",
+      "email": "Email",
+      "rights": "All rights reserved.",
+      "brandTag": "Maritime technology",
+      "personalTag": "Systems · Perspective",
+      "dock": "Connected at sea. Ready on board.",
+      "personalDock": "Clear thinking. Practical systems."
+    },
+    "vi": {
+      "home": "Trang chủ",
+      "services": "Dịch vụ",
+      "about": "Giới thiệu",
+      "contact": "Liên hệ",
+      "projects": "Công việc",
+      "principles": "Nguyên tắc",
+      "privacy": "Quyền riêng tư",
+      "appearance": "Giao diện",
+      "appearanceLabel": "Tùy chỉnh giao diện",
+      "mode": "Chế độ màu",
+      "light": "Sáng",
+      "dark": "Tối",
+      "system": "Tự động",
+      "opacity": "Độ đục kính",
+      "saved": "Ghi nhớ trên thiết bị này. Ưu tiên tùy chọn trợ năng của hệ thống.",
+      "skip": "Đến nội dung chính",
+      "menu": "Mở menu",
+      "mainNav": "Điều hướng chính",
+      "mobileNav": "Điều hướng di động",
+      "language": "Ngôn ngữ",
+      "talk": "Liên hệ",
+      "us": "Hoa Kỳ",
+      "vn": "Việt Nam",
+      "back": "Về trang chủ",
+      "email": "Email",
+      "rights": "Bảo lưu mọi quyền.",
+      "brandTag": "Công nghệ hàng hải",
+      "personalTag": "Hệ thống · Góc nhìn",
+      "dock": "Kết nối trên biển. Sẵn sàng trên tàu.",
+      "personalDock": "Rõ ràng từ tư duy đến hệ thống."
+    },
+    "zh": {
+      "home": "首页",
+      "services": "服务",
+      "about": "关于",
+      "contact": "联系",
+      "projects": "工作",
+      "principles": "原则",
+      "privacy": "隐私",
+      "appearance": "外观",
+      "appearanceLabel": "外观设置",
+      "mode": "颜色模式",
+      "light": "浅色",
+      "dark": "深色",
+      "system": "自动",
+      "opacity": "玻璃不透明度",
+      "saved": "设置保存在此设备上。系统辅助功能偏好优先。",
+      "skip": "跳至正文",
+      "menu": "打开菜单",
+      "mainNav": "主导航",
+      "mobileNav": "移动导航",
+      "language": "语言",
+      "talk": "联系我们",
+      "us": "美国",
+      "vn": "越南",
+      "back": "返回首页",
+      "email": "电子邮件",
+      "rights": "保留所有权利。",
+      "brandTag": "海事技术",
+      "personalTag": "系统 · 视角",
+      "dock": "连接海上，服务船上。",
+      "personalDock": "清晰思考，务实构建。"
+    }
+  }
+}

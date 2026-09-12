@@ -1,0 +1,9 @@
+---
+import Page from '../../components/Page.astro';
+import data from '../../data/content.json';
+export function getStaticPaths() {
+ return ['vi','zh'].flatMap(lang => Object.keys(data.pages.en).map(page => ({params:{lang,page:page==='home'?undefined:page},props:{lang,page}})));
+}
+const {lang,page}=Astro.props;
+---
+<Page page={page} lang={lang}/>
