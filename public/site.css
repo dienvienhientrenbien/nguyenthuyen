@@ -8,3 +8,6 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{animation:none!important;transition:none!important}.button:hover{transform:none}}
 
 @media(max-width:767px){.orbit.two{inset:12%}}
+
+.hero-art{overflow:clip}.personal .hero-art:before{max-width:100%}
+@media(max-width:767px){.preferences-panel{right:-46px}}
