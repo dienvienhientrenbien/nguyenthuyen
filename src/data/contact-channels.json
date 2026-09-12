@@ -1,0 +1,35 @@
+{
+  "wechat": "dienvienhientrenbien",
+  "messaging": [
+    {
+      "name": "Zalo",
+      "detail": "+84 987 123 512",
+      "url": "https://zalo.me/84987123512",
+      "icon": "Z"
+    },
+    {
+      "name": "WhatsApp",
+      "detail": "+84 987 123 512",
+      "url": "https://wa.me/84987123512",
+      "icon": "W"
+    },
+    {
+      "name": "Messenger",
+      "detail": "Diễn Viên Hiện Trên Biển",
+      "url": "https://m.me/dienvienhientrenbien",
+      "icon": "M"
+    }
+  ],
+  "socials": [
+    {
+      "name": "LinkedIn",
+      "detail": "Nguyễn Đình Thuyên",
+      "url": "https://www.linkedin.com/in/nguyendinhthuyen/"
+    },
+    {
+      "name": "Facebook",
+      "detail": "Diễn Viên Hiện Trên Biển",
+      "url": "https://www.facebook.com/dienvienhientrenbien"
+    }
+  ]
+}

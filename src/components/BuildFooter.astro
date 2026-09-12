@@ -1,0 +1,14 @@
+---
+import data from '../data/content.json';
+import { release } from '../lib/release';
+const {lang='en'}=Astro.props;
+const u={vi:{label:'Thông tin phiên bản website',details:'Bản đang xem',commit:'Ngày commit',build:'Ngày build',unknown:'Chưa có thông tin',close:'Đóng',draft:'Có thay đổi cục bộ',contact:'Liên hệ'},en:{label:'Website release information',details:'This website build',commit:'Committed',build:'Built',unknown:'Unavailable',close:'Close',draft:'Local changes',contact:'Contact'},zh:{label:'网站版本信息',details:'当前浏览的版本',commit:'提交时间',build:'构建时间',unknown:'暂无信息',close:'关闭',draft:'有本地修改',contact:'联系'}}[lang];
+const tags=data.ui[lang],name=data.meta.name;
+const local=(slug)=>`${lang==='en'?'':'/'+lang}/${slug}/`;
+const format=(value,seconds=false)=>value?new Intl.DateTimeFormat({en:'en-GB',vi:'vi-VN',zh:'zh-CN'}[lang],{year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',...(seconds?{second:'2-digit'}:{}),hour12:false,timeZone:release.timeZone}).format(new Date(value)):u.unknown;
+---
+<aside class="release-dock" aria-label={u.label}><div class="shell"><div class="release-bar glass" data-build-commit={release.commit} data-commit-date={release.committedAt}>
+ <div class="release-zone release-host"><span class="release-primary"><span class="release-dot" aria-hidden="true"></span>Cloudflare Pages</span><a class="release-secondary" href={local('contact')}>{u.contact} ↗</a></div>
+ <div class="release-zone release-brand"><strong class="release-primary">{name}</strong><span class="release-secondary">{data.brand==='corporate'?tags.dock:tags.personalDock}</span></div>
+ <div class="release-zone release-version"><details class="release-details" data-release-details><summary class="release-primary" aria-label={u.label}><span>Commit</span><code>{release.commit?.slice(0,7)||'—'}</code><span aria-hidden="true">⌃</span></summary><div class="release-popover"><div class="release-popover-heading"><strong>{u.details}</strong><button type="button" data-close-release aria-label={u.close}>×</button></div><dl><dt>Commit</dt><dd><code>{release.commit||u.unknown}</code></dd><dt>{u.commit}</dt><dd><time datetime={release.committedAt}>{format(release.committedAt,true)}</time></dd><dt>{u.build}</dt><dd><time datetime={release.builtAt}>{format(release.builtAt,true)}</time></dd></dl><small>UTC+7 · Asia/Ho_Chi_Minh{release.dirty?` · ${u.draft}`:''}</small></div></details><span class="release-secondary"><time datetime={release.committedAt}>{format(release.committedAt)}</time><span class="release-timezone"> UTC+7</span></span></div>
+</div></div></aside>
