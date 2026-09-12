@@ -28,7 +28,7 @@ const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',
  <script type="application/ld+json" set:html={JSON.stringify(ld)}/>
  <script is:inline>try{const r=document.documentElement,s=JSON.parse(localStorage.getItem(`${r.dataset.brand}-appearance-v1`)||'null');const t=s&&['light','dark','system'].includes(s.theme)?s.theme:'system';r.dataset.theme=t==='system'?(matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light'):t;if(s&&Number.isFinite(s.tint)){r.style.setProperty('--glass-tint',Math.max(0,Math.min(100,s.tint))/100);r.toggleAttribute('data-tint-opaque',s.tint===100)}}catch{}</script>
  <link rel="stylesheet" href={asset('/release-footer.css')}/>
-</head>
+<link rel="stylesheet" href={asset('/typography.css')}/></head>
 <body class={brand}>
  <a class="skip-link" href="#main">{u.skip}</a><div class="ambient" aria-hidden="true"></div>
  <header class="header-wrap shell"><div class="topbar glass">
@@ -42,8 +42,8 @@ const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',
   </div>
  </div></header>
  <main id="main" class="shell"><slot/></main>
- <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links">{[['https://duncansystem.com','Duncan System'],['https://nguyenthuyen.vn','Nguyễn Đình Thuyên'],['https://dienvienhientrenbien.com','Diễn Viên Hiện Trên Biển']].filter(([url])=>url!==domain).map(([url,label])=><a href={url+local()} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}<a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
+ <footer class="shell"><div data-contact-boundary></div><div class="contact-slot"><ContactChannels lang={lang}/></div><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links">{[['https://duncansystem.com','Duncan System'],['https://nguyenthuyen.vn','Nguyễn Đình Thuyên'],['https://dienvienhientrenbien.com','Diễn Viên Hiện Trên Biển'],['https://www.nguyenthuyen.edu.vn','Nguyễn Đình Thuyên · Learn']].filter(([url])=>url!==domain).map(([url,label])=><a href={url+local()} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}<a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
  <BuildFooter lang={lang}/><script is:inline src={asset('/release-footer.js')} defer></script>
- <ContactChannels lang={lang}/><script is:inline src={asset('/contact-channels.js')} defer></script><script is:inline src={asset('/appearance.js')} defer></script><script is:inline src={asset('/experience.js')} defer></script>
+ <script is:inline src={asset('/contact-channels.js')} defer></script><script is:inline src={asset('/appearance.js')} defer></script><script is:inline src={asset('/experience.js')} defer></script>
 </body>
 </html>
