@@ -35,7 +35,7 @@ const ld=(personal||creative)?{'@context':'https://schema.org','@type':'Person',
   </div>
  </div></header>
  <main id="main" class="shell"><slot/></main>
- <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links">{[['https://duncansystem.com','Duncan System'],['https://nguyenthuyen.vn','Nguyễn Đình Thuyên'],['https://dienvienhientrenbien.com','Diễn Viên Hiện Trên Biển']].filter(([url])=>url!==domain).map(([url,label])=><a href={url+local()}>{label} ↗</a>)}<a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
+ <footer class="shell"><div class="site-footer"><span>© {new Date().getFullYear()} {legal}. {u.rights}</span><div class="footer-links">{[['https://duncansystem.com','Duncan System'],['https://nguyenthuyen.vn','Nguyễn Đình Thuyên'],['https://dienvienhientrenbien.com','Diễn Viên Hiện Trên Biển']].filter(([url])=>url!==domain).map(([url,label])=><a href={url+local()} target="_blank" rel="noopener noreferrer">{label} ↗</a>)}<a href={local('privacy')}>{u.privacy}</a><a href={'mailto:'+email}>{email}</a></div></div></footer>
  <aside class="dock-wrap" aria-label={u.contact}><div class="shell"><div class="dock glass"><span><i class="dot"></i>{name}<span class="desktop-only"> / {(personal||creative)?u.personalDock:u.dock}</span></span><a href={local('contact')}>{u.contact} ↗</a></div></div></aside>
  <script is:inline src="/appearance.js" defer></script><script is:inline src="/experience.js" defer></script>
 </body>

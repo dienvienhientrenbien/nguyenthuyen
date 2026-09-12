@@ -16,7 +16,7 @@ const description=d.description||`${d.title} — ${brandName}`;
 <Layout title={`${d.title} — ${brandName}`} description={description} page={page} lang={lang} brand={brand}>
 {page==='home' ? <>
  <section class="hero">
-  <div><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/><p class="lead">{d.lead}</p><div class="hero-actions"><a class="button primary" href={creative?'https://open.spotify.com/artist/5SDr2lA0fFux0k4qYZYbAT':local('contact')}>{d.cta}<span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href={local(creative?'film':personal?'about':'solutions')}>{d.secondary}<span aria-hidden="true">→</span></a></div><span class="micro">{d.micro}</span></div>
+  <div><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/><p class="lead">{d.lead}</p><div class="hero-actions"><a class="button primary" href={creative?'https://open.spotify.com/artist/5SDr2lA0fFux0k4qYZYbAT':local('contact')} target={creative?'_blank':undefined} rel={creative?'noopener noreferrer':undefined}>{d.cta}<span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href={local(creative?'film':personal?'about':'solutions')}>{d.secondary}<span aria-hidden="true">→</span></a></div><span class="micro">{d.micro}</span></div>
   <HeroScene brand={brand} u={u}/>
  </section>
  <div class="divider"><p>{d.divider}</p><div class="expertise">{d.expertise.map(x=><span>{x}</span>)}</div></div>
@@ -25,9 +25,9 @@ const description=d.description||`${d.title} — ${brandName}`;
 <Experience page={page} lang={lang}/>
 {page==='contact'&&<Brief lang={lang}/>}
 
-{page==='solutions'&&<><section class="section story"><div><div class="eyebrow">{d.roadmapLabel}</div><h2 set:html={d.roadmapHeading}/></div><div class="prose roadmap"><p>{d.roadmapText}</p><p><a href="https://leo.amazon.com/business/industries/maritime">{d.roadmapLink} ↗</a></p></div></section><p class="micro availability">{d.availability}</p></>}
+{page==='solutions'&&<><section class="section story"><div><div class="eyebrow">{d.roadmapLabel}</div><h2 set:html={d.roadmapHeading}/></div><div class="prose roadmap"><p>{d.roadmapText}</p><p><a href="https://leo.amazon.com/business/industries/maritime" target="_blank" rel="noopener noreferrer">{d.roadmapLink} ↗</a></p></div></section><p class="micro availability">{d.availability}</p></>}
 
-{d.sections&&<div class="prose">{d.quote&&<blockquote>{d.quote}</blockquote>}{d.sections.map(([title,text])=><section><h2 class={page==='principles'?'mono':undefined}>{title}</h2><p>{text}</p></section>)}{d.closing&&<p class="quote-line">{d.closing}</p>}{personal&&page==='about'&&<p><a href={other}>DUNCAN SYSTEM LLC ↗</a></p>}</div>}
+{d.sections&&<div class="prose">{d.quote&&<blockquote>{d.quote}</blockquote>}{d.sections.map(([title,text])=><section><h2 class={page==='principles'?'mono':undefined}>{title}</h2><p>{text}</p></section>)}{d.closing&&<p class="quote-line">{d.closing}</p>}{personal&&page==='about'&&<p><a href={other} target="_blank" rel="noopener noreferrer">DUNCAN SYSTEM LLC ↗</a></p>}</div>}
 
 {d.facts&&<section class="section company-facts"><div class="section-heading"><div><div class="eyebrow">DUNCAN SYSTEM LLC</div><h2>{d.factsTitle}</h2></div><p>{d.factsNote}</p></div><dl>{d.facts.map(([label,value])=><div><dt>{label}</dt><dd>{value}</dd></div>)}</dl></section>}
 
