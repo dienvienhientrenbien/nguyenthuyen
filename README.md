@@ -46,3 +46,8 @@ npx wrangler pages deploy dist --project-name nguyenthuyen --branch main
 ```
 
 Wrangler authentication belongs to the operator environment, never to committed source.
+
+
+## Interactive content update — 2026-09-13
+
+Expanded trilingual content is in `src/data/experience.json`. Original lightweight diagrams and CSS motion have a pause control and respect reduced-motion preferences. The contact brief builder generates a local email draft, without a backend or automatic email delivery. `public/experience.js` progressively enhances the static HTML.

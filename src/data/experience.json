@@ -1,0 +1,368 @@
+{
+  "en": {
+    "intro": [
+      "Systems with a way back.",
+      "Technology becomes useful when people can understand it, operate it and recover it. My starting point is the relationship between those three things."
+    ],
+    "layers": [
+      [
+        "ROOT",
+        "Protect the foundation.",
+        "Know who owns the domain, the accounts and the source. Keep recovery routes and access responsibilities clear before adding another service.",
+        "Ownership / access / recovery"
+      ],
+      [
+        "CORE",
+        "Keep the essentials working.",
+        "Identify the parts a workflow cannot do without. Prefer documented settings, readable tools and a practical way to restore a known working state.",
+        "Operations / clarity / resilience"
+      ],
+      [
+        "BRANCH + LEAF",
+        "Add what earns its place.",
+        "A new feature or a visual detail should help someone make a decision or complete a task. Keep extensions separable so the core can continue when they change.",
+        "Interfaces / experiments / expression"
+      ]
+    ],
+    "scenarios": [
+      [
+        "Systems & operations",
+        "Make the moving parts understandable.",
+        "Turn a technical problem into a clear picture: what connects to what, who uses it, what can fail and how to recover. The result should be useful after the conversation ends.",
+        "Maps, checklists and maintainable tools."
+      ],
+      [
+        "Duncan System",
+        "Practical technology for life at sea.",
+        "A focused company for maritime Internet and onboard technology. Connectivity, networks, CCTV and specialist service coordination start with the vessel’s actual needs.",
+        "Explore the company and its service scope."
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "A space for sound and light.",
+        "Music and film photography offer another way of paying attention: to timing, texture, silence and the details that disappear when everything moves too quickly.",
+        "Visit the music and film photography space."
+      ]
+    ],
+    "process": [
+      [
+        "Context",
+        "Understand the people, constraints and purpose."
+      ],
+      [
+        "Structure",
+        "Map the essentials and the dependencies."
+      ],
+      [
+        "Build & check",
+        "Work in small, inspectable steps."
+      ],
+      [
+        "Leave a way back",
+        "Document, hand over and preserve recovery."
+      ]
+    ],
+    "faqs": [
+      [
+        "What is the best way to start a conversation?",
+        "Send the context, what is difficult today, the outcome you want and any important timing. A clear description is more useful than a finished technical specification."
+      ],
+      [
+        "Where should maritime service requests go?",
+        "DUNCAN SYSTEM LLC handles the maritime Internet and onboard technology direction. Its website describes the service areas and the information useful for a first discussion."
+      ],
+      [
+        "Where can I find the creative work?",
+        "Diễn Viên Hiện Trên Biển is the separate space for music and film photography. This site connects that creative direction with my broader approach to systems and work."
+      ]
+    ],
+    "topics": [
+      "Systems & technology",
+      "Maritime work",
+      "Creative collaboration",
+      "A conversation"
+    ],
+    "notes": [
+      [
+        "recovery",
+        "Keep a way back.",
+        "SYSTEMS",
+        "A backup is useful only if there is a practical way to restore it. The same applies to accounts, configurations and the small scripts that keep a workflow moving.",
+        "Before changing a system, keep a known working state, record what is being changed and decide how to reverse the change. Recovery should be something a person can follow, not something that exists only in someone’s memory.",
+        [
+          "Name the owner and the recovery route.",
+          "Keep a readable record of important changes.",
+          "Check a restore path before relying on it."
+        ]
+      ],
+      [
+        "connection",
+        "A satellite link is only the beginning.",
+        "MARITIME",
+        "An Internet terminal answers one part of the problem. The onboard network decides how the connection reaches the people and equipment that need it.",
+        "Start with the vessel’s routes and daily use, then map the router, switches, access points and critical devices. Agree who can access what and what happens when the primary link is unavailable.",
+        [
+          "Map the whole path, from terminal to user.",
+          "Separate needs before allocating capacity.",
+          "Make the final configuration understandable."
+        ]
+      ],
+      [
+        "attention",
+        "Make room for attention.",
+        "CREATIVE",
+        "A frame and a piece of music both ask what to keep and what to leave out. More detail does not automatically make either one stronger.",
+        "Film photography introduces a pause between seeing and reviewing. Music makes that pause audible through space, rhythm and silence. These are useful constraints: a chance to choose with more intention.",
+        [
+          "Observe before adding another element.",
+          "Let timing and texture carry part of the story.",
+          "Keep the detail that changes how it feels."
+        ]
+      ]
+    ]
+  },
+  "vi": {
+    "intro": [
+      "Hệ thống cần có đường quay lại.",
+      "Công nghệ hữu ích khi con người hiểu được, vận hành được và khôi phục được. Tôi bắt đầu từ mối liên hệ giữa ba điều đó."
+    ],
+    "layers": [
+      [
+        "ROOT",
+        "Bảo vệ nền tảng.",
+        "Biết ai sở hữu tên miền, tài khoản và mã nguồn. Làm rõ cách khôi phục và trách nhiệm truy cập trước khi thêm một dịch vụ mới.",
+        "Sở hữu / truy cập / khôi phục"
+      ],
+      [
+        "CORE",
+        "Giữ phần thiết yếu hoạt động.",
+        "Xác định những phần không thể thiếu của công việc. Ưu tiên cấu hình có tài liệu, công cụ dễ hiểu và cách trở về trạng thái đã hoạt động tốt.",
+        "Vận hành / rõ ràng / bền bỉ"
+      ],
+      [
+        "BRANCH + LEAF",
+        "Thêm những gì thực sự có ích.",
+        "Một tính năng hay chi tiết giao diện nên giúp người dùng quyết định hoặc hoàn thành việc gì đó. Giữ phần mở rộng có thể tách ra để phần lõi vẫn tiếp tục hoạt động.",
+        "Giao diện / thử nghiệm / biểu đạt"
+      ]
+    ],
+    "scenarios": [
+      [
+        "Hệ thống & vận hành",
+        "Làm rõ những phần đang chuyển động.",
+        "Chuyển một vấn đề kỹ thuật thành bức tranh rõ ràng: phần nào kết nối với phần nào, ai dùng, có thể lỗi ở đâu và khôi phục thế nào. Kết quả cần tiếp tục hữu ích sau cuộc trao đổi.",
+        "Sơ đồ, checklist và công cụ dễ bảo trì."
+      ],
+      [
+        "Duncan System",
+        "Công nghệ thiết thực cho cuộc sống trên biển.",
+        "Một công ty tập trung vào Internet hàng hải và công nghệ trên tàu. Kết nối, mạng, CCTV và phối hợp kỹ thuật chuyên ngành bắt đầu từ nhu cầu thực tế của tàu.",
+        "Tìm hiểu công ty và phạm vi dịch vụ."
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "Không gian của âm thanh và ánh sáng.",
+        "Âm nhạc và ảnh film là một cách chú ý khác: tới nhịp điệu, chất liệu, khoảng lặng và những chi tiết dễ mất đi khi mọi thứ trôi quá nhanh.",
+        "Ghé không gian âm nhạc và nhiếp ảnh film."
+      ]
+    ],
+    "process": [
+      [
+        "Bối cảnh",
+        "Hiểu con người, giới hạn và mục đích."
+      ],
+      [
+        "Cấu trúc",
+        "Xác định phần thiết yếu và các phụ thuộc."
+      ],
+      [
+        "Làm & kiểm tra",
+        "Tiến từng bước nhỏ, có thể xem xét."
+      ],
+      [
+        "Giữ đường quay lại",
+        "Lưu tài liệu, bàn giao và khả năng khôi phục."
+      ]
+    ],
+    "faqs": [
+      [
+        "Nên bắt đầu trao đổi như thế nào?",
+        "Hãy chia sẻ bối cảnh, khó khăn hiện tại, kết quả mong muốn và thời gian quan trọng. Một mô tả rõ ràng hữu ích hơn một bộ yêu cầu kỹ thuật hoàn chỉnh ngay từ đầu."
+      ],
+      [
+        "Yêu cầu dịch vụ hàng hải gửi ở đâu?",
+        "DUNCAN SYSTEM LLC phụ trách hướng Internet hàng hải và công nghệ trên tàu. Website công ty trình bày các nhóm dịch vụ và thông tin cần cho cuộc trao đổi đầu tiên."
+      ],
+      [
+        "Không gian sáng tác ở đâu?",
+        "Diễn Viên Hiện Trên Biển là website riêng cho âm nhạc và nhiếp ảnh film. Website cá nhân kết nối hướng sáng tạo đó với cách tôi tiếp cận hệ thống và công việc."
+      ]
+    ],
+    "topics": [
+      "Hệ thống & công nghệ",
+      "Công việc hàng hải",
+      "Hợp tác sáng tạo",
+      "Trao đổi khác"
+    ],
+    "notes": [
+      [
+        "recovery",
+        "Giữ một đường quay lại.",
+        "HỆ THỐNG",
+        "Bản sao lưu chỉ hữu ích khi có cách khôi phục thực tế. Tài khoản, cấu hình và những script nhỏ giúp công việc vận hành cũng cần được nhìn theo cách đó.",
+        "Trước khi thay đổi hệ thống, hãy giữ lại trạng thái đang hoạt động, ghi rõ điều sắp đổi và xác định cách hoàn tác. Việc khôi phục nên là điều một người có thể làm theo, không chỉ tồn tại trong trí nhớ của ai đó.",
+        [
+          "Xác định người sở hữu và cách khôi phục.",
+          "Lưu thay đổi quan trọng bằng cách dễ đọc.",
+          "Kiểm tra đường khôi phục trước khi dựa vào nó."
+        ]
+      ],
+      [
+        "connection",
+        "Đường truyền vệ tinh mới là khởi đầu.",
+        "HÀNG HẢI",
+        "Terminal Internet giải quyết một phần bài toán. Mạng trên tàu quyết định kết nối đến được những người và thiết bị cần sử dụng như thế nào.",
+        "Bắt đầu từ tuyến hoạt động và cách dùng hằng ngày, sau đó lập sơ đồ router, switch, điểm phát và thiết bị quan trọng. Thống nhất ai được truy cập phần nào và điều gì xảy ra khi đường truyền chính không sẵn sàng.",
+        [
+          "Vẽ toàn bộ đường đi từ terminal đến người dùng.",
+          "Phân biệt nhu cầu trước khi chia dung lượng.",
+          "Làm cho cấu hình cuối cùng có thể hiểu được."
+        ]
+      ],
+      [
+        "attention",
+        "Dành chỗ cho sự chú ý.",
+        "SÁNG TẠO",
+        "Một khung hình và một bản nhạc đều đặt câu hỏi nên giữ gì, bỏ gì. Thêm chi tiết không tự động làm tác phẩm mạnh hơn.",
+        "Chụp film tạo ra khoảng dừng giữa việc nhìn thấy và xem lại. Âm nhạc khiến khoảng dừng ấy có thể nghe được qua không gian, nhịp và sự im lặng. Giới hạn có thể là cơ hội lựa chọn có chủ đích hơn.",
+        [
+          "Quan sát trước khi thêm một yếu tố mới.",
+          "Để nhịp và chất liệu kể một phần câu chuyện.",
+          "Giữ chi tiết làm thay đổi cảm nhận."
+        ]
+      ]
+    ]
+  },
+  "zh": {
+    "intro": [
+      "系统需要一条返回的路。",
+      "当人们能够理解、运行并恢复一个系统时，技术才真正有用。我从这三者之间的关系开始思考。"
+    ],
+    "layers": [
+      [
+        "ROOT",
+        "保护基础。",
+        "明确域名、账号和源代码的所有权。增加服务前，先理清恢复路径和访问职责。",
+        "所有权 / 权限 / 恢复"
+      ],
+      [
+        "CORE",
+        "让核心持续运行。",
+        "找出工作流程不可缺少的部分。选择有记录的配置、容易理解的工具，以及回到已知可用状态的办法。",
+        "运营 / 清晰 / 韧性"
+      ],
+      [
+        "BRANCH + LEAF",
+        "只加入值得保留的部分。",
+        "新功能或视觉细节应该帮助人们做决定或完成任务。让扩展保持可分离，使核心在变化时仍能运行。",
+        "界面 / 实验 / 表达"
+      ]
+    ],
+    "scenarios": [
+      [
+        "系统与运营",
+        "让相互连接的部分清晰可见。",
+        "把技术问题变成清晰的结构：什么连接什么，谁在使用，哪里可能出错，以及如何恢复。成果应在沟通结束后仍然有用。",
+        "结构图、检查清单和易维护的工具。"
+      ],
+      [
+        "Duncan System",
+        "为海上工作提供实用技术。",
+        "一家专注海上互联网与船载技术的新公司。连接、网络、CCTV 和专业服务协调，都从船舶的实际需求开始。",
+        "了解公司与服务范围。"
+      ],
+      [
+        "Diễn Viên Hiện Trên Biển",
+        "声音与光的空间。",
+        "音乐和胶片摄影提供另一种观察方式：留意节奏、质感、沉默，以及在匆忙中容易消失的细节。",
+        "前往音乐与胶片摄影空间。"
+      ]
+    ],
+    "process": [
+      [
+        "背景",
+        "理解使用者、限制和目的。"
+      ],
+      [
+        "结构",
+        "梳理核心部分与依赖关系。"
+      ],
+      [
+        "构建与检查",
+        "通过可检查的小步骤推进。"
+      ],
+      [
+        "保留退路",
+        "记录、交接并维护恢复能力。"
+      ]
+    ],
+    "faqs": [
+      [
+        "如何开始沟通？",
+        "说明背景、目前的困难、期望结果和重要时间。清楚的问题描述比一开始就准备完整的技术规格更有帮助。"
+      ],
+      [
+        "海事服务需求应联系哪里？",
+        "DUNCAN SYSTEM LLC 专注海上互联网和船载技术。公司网站介绍服务领域及首次沟通所需的信息。"
+      ],
+      [
+        "在哪里了解创作方向？",
+        "Diễn Viên Hiện Trên Biển 是音乐与胶片摄影的独立空间。个人网站将这一创作方向与我的系统思考及工作方法联系起来。"
+      ]
+    ],
+    "topics": [
+      "系统与技术",
+      "海事工作",
+      "创作合作",
+      "其他交流"
+    ],
+    "notes": [
+      [
+        "recovery",
+        "始终保留退路。",
+        "系统",
+        "备份只有在能够实际恢复时才有价值。账号、配置和维持工作流程的小脚本也一样。",
+        "修改系统前，保留一个已知可用的状态，记录将要改变的内容，并决定如何撤销。恢复应该是他人能够遵循的过程，而不只是某个人脑中的记忆。",
+        [
+          "明确所有者与恢复路径。",
+          "以清晰的方式记录重要变更。",
+          "依赖备份前，先检查恢复方法。"
+        ]
+      ],
+      [
+        "connection",
+        "卫星链路只是起点。",
+        "海事",
+        "互联网终端解决了部分问题。船载网络决定连接如何到达需要它的人员和设备。",
+        "从航线和日常使用出发，梳理路由器、交换机、接入点及关键设备。明确访问权限，以及主链路不可用时应如何处理。",
+        [
+          "画出从终端到用户的完整路径。",
+          "分清需求，再分配容量。",
+          "让最终配置能够被理解。"
+        ]
+      ],
+      [
+        "attention",
+        "为专注留出空间。",
+        "创作",
+        "一张照片和一段音乐都在问：什么值得保留，什么可以舍去。更多细节并不必然让作品更有力量。",
+        "胶片摄影在观察与回看之间带来停顿。音乐通过空间、节奏和沉默，让这种停顿可以被听见。这些限制也可以成为更有意识地选择的机会。",
+        [
+          "添加元素前，先观察。",
+          "让节奏与质感承担一部分表达。",
+          "保留能改变感受的细节。"
+        ]
+      ]
+    ]
+  }
+}

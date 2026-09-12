@@ -96,7 +96,7 @@
         "sections": [
           [
             "This website",
-            "This personal website provides information and email or telephone links. It has no account registration, advertising trackers or contact-data collection form."
+            "This website introduces our work and provides direct contact links. There are no accounts or advertising trackers. The brief builder prepares text locally in your browser; it is sent only when you choose to send it through your email application."
           ],
           [
             "When you contact me",
@@ -118,6 +118,13 @@
         "eyebrow": "404",
         "heading": "This page<br/>is not here.",
         "lead": "Return to the homepage to find your way."
+      },
+      "notes": {
+        "title": "Notes & perspectives",
+        "description": "Technology becomes useful when people can understand it, operate it and recover it. My starting point is the relationship between those three things.",
+        "eyebrow": "Notes & perspectives",
+        "heading": "Thinking out loud.<br/>Keeping it useful.",
+        "lead": "Short perspectives on systems, work and paying attention."
       }
     },
     "vi": {
@@ -215,7 +222,7 @@
         "sections": [
           [
             "Website này",
-            "Website cá nhân cung cấp thông tin cùng liên kết email, điện thoại. Không có đăng ký tài khoản, công cụ theo dõi quảng cáo hay biểu mẫu thu thập thông tin liên hệ."
+            "Website giới thiệu công việc và các kênh liên hệ trực tiếp, không có tài khoản hoặc theo dõi quảng cáo. Công cụ soạn đề bài tạo nội dung ngay trong trình duyệt; nội dung chỉ được gửi khi bạn tự gửi qua ứng dụng email."
           ],
           [
             "Khi bạn liên hệ",
@@ -237,6 +244,13 @@
         "eyebrow": "404",
         "heading": "Trang này<br/>chưa có ở đây.",
         "lead": "Về trang chủ để tìm nội dung bạn cần."
+      },
+      "notes": {
+        "title": "Ghi chú & góc nhìn",
+        "description": "Công nghệ hữu ích khi con người hiểu được, vận hành được và khôi phục được. Tôi bắt đầu từ mối liên hệ giữa ba điều đó.",
+        "eyebrow": "Ghi chú & góc nhìn",
+        "heading": "Ghi lại suy nghĩ.<br/>Giữ điều hữu ích.",
+        "lead": "Những góc nhìn ngắn về hệ thống, công việc và cách chú ý."
       }
     },
     "zh": {
@@ -334,7 +348,7 @@
         "sections": [
           [
             "本网站",
-            "本个人网站提供信息以及电子邮件和电话链接。不提供账户注册，不设置广告追踪工具或联系信息收集表单。"
+            "本网站介绍工作方向并提供直接联系渠道，不设账号或广告追踪。需求草稿在浏览器本地生成，只有在您通过邮件应用发送时才会发出。"
           ],
           [
             "当您联系我时",
@@ -356,6 +370,13 @@
         "eyebrow": "404",
         "heading": "此页面<br/>暂不可用。",
         "lead": "请返回首页查找需要的内容。"
+      },
+      "notes": {
+        "title": "笔记与观点",
+        "description": "当人们能够理解、运行并恢复一个系统时，技术才真正有用。我从这三者之间的关系开始思考。",
+        "eyebrow": "笔记与观点",
+        "heading": "记录思考。<br/>保留有用的部分。",
+        "lead": "关于系统、工作与专注的简短观点。"
       }
     }
   },
@@ -516,7 +537,39 @@
       "brandTag": "Maritime technology",
       "personalTag": "Systems · Perspective",
       "dock": "Connected at sea. Ready on board.",
-      "personalDock": "Clear thinking. Practical systems."
+      "personalDock": "Clear thinking. Practical systems.",
+      "explore": "Explore the system",
+      "select": "Choose a layer",
+      "example": "Concept illustration",
+      "pause": "Pause motion",
+      "play": "Enable motion",
+      "deliver": "What we work through",
+      "scenarios": "Built around the situation",
+      "scenarioNote": "Planning examples, adapted to the actual equipment and scope.",
+      "process": "From first conversation to handover",
+      "faq": "A few useful answers",
+      "notes": "Notes & perspectives",
+      "read": "Read the note",
+      "connect": "Explore this direction",
+      "brief": "Start with a useful brief",
+      "briefLead": "A few details make the first conversation more useful. Create a draft to send from your own email app.",
+      "topic": "Area of interest",
+      "name": "Your name or organisation (optional)",
+      "context": "What are you thinking about?",
+      "placeholder": "Share the context, what you want to achieve and your timing.",
+      "generate": "Prepare email draft",
+      "draft": "Your email draft",
+      "send": "Open email app",
+      "copy": "Copy the brief",
+      "copied": "Brief copied.",
+      "copyFail": "Select the draft text and copy it manually.",
+      "local": "This draft stays in your browser. You choose when to send it.",
+      "outputs": "A useful outcome",
+      "studio": "The creative space",
+      "work": "Ways we can work together",
+      "more": "Explore further",
+      "music": "Music",
+      "film": "Film photography"
     },
     "vi": {
       "home": "Trang chủ",
@@ -548,7 +601,39 @@
       "brandTag": "Công nghệ hàng hải",
       "personalTag": "Hệ thống · Góc nhìn",
       "dock": "Kết nối trên biển. Sẵn sàng trên tàu.",
-      "personalDock": "Rõ ràng từ tư duy đến hệ thống."
+      "personalDock": "Rõ ràng từ tư duy đến hệ thống.",
+      "explore": "Khám phá hệ thống",
+      "select": "Chọn một lớp",
+      "example": "Minh hoạ ý tưởng",
+      "pause": "Dừng chuyển động",
+      "play": "Bật chuyển động",
+      "deliver": "Những phần cùng làm rõ",
+      "scenarios": "Bắt đầu từ tình huống thực tế",
+      "scenarioNote": "Ví dụ để lên phương án; điều chỉnh theo thiết bị và phạm vi thực tế.",
+      "process": "Từ trao đổi đầu tiên đến bàn giao",
+      "faq": "Một vài câu trả lời hữu ích",
+      "notes": "Ghi chú & góc nhìn",
+      "read": "Đọc ghi chú",
+      "connect": "Khám phá hướng này",
+      "brief": "Bắt đầu bằng một đề bài rõ ràng",
+      "briefLead": "Một vài thông tin sẽ giúp cuộc trao đổi đi đúng hướng. Tạo bản nháp để gửi bằng ứng dụng email của bạn.",
+      "topic": "Nội dung quan tâm",
+      "name": "Tên hoặc tổ chức của bạn (không bắt buộc)",
+      "context": "Bạn đang muốn làm điều gì?",
+      "placeholder": "Chia sẻ bối cảnh, kết quả mong muốn và thời gian dự kiến.",
+      "generate": "Soạn bản nháp email",
+      "draft": "Bản nháp email",
+      "send": "Mở ứng dụng email",
+      "copy": "Sao chép nội dung",
+      "copied": "Đã sao chép nội dung.",
+      "copyFail": "Hãy chọn nội dung bản nháp và sao chép thủ công.",
+      "local": "Bản nháp nằm trong trình duyệt. Bạn tự quyết định khi nào gửi.",
+      "outputs": "Kết quả hữu ích",
+      "studio": "Không gian sáng tác",
+      "work": "Những cách có thể cùng làm",
+      "more": "Khám phá thêm",
+      "music": "Âm nhạc",
+      "film": "Nhiếp ảnh film"
     },
     "zh": {
       "home": "首页",
@@ -580,7 +665,46 @@
       "brandTag": "海事技术",
       "personalTag": "系统 · 视角",
       "dock": "连接海上，服务船上。",
-      "personalDock": "清晰思考，务实构建。"
+      "personalDock": "清晰思考，务实构建。",
+      "explore": "探索系统",
+      "select": "选择一个层级",
+      "example": "概念示意",
+      "pause": "暂停动态效果",
+      "play": "开启动效",
+      "deliver": "共同确认的事项",
+      "scenarios": "从实际场景出发",
+      "scenarioNote": "这些是规划示例，具体方案需结合现有设备与项目范围。",
+      "process": "从初次沟通到交付",
+      "faq": "一些实用解答",
+      "notes": "笔记与观点",
+      "read": "阅读笔记",
+      "connect": "探索这个方向",
+      "brief": "从清晰的需求开始",
+      "briefLead": "提供一些背景信息，让第一次沟通更有效。生成草稿后，通过自己的邮件应用发送。",
+      "topic": "感兴趣的方向",
+      "name": "姓名或机构（可选）",
+      "context": "您希望实现什么？",
+      "placeholder": "说明背景、期望结果和时间安排。",
+      "generate": "生成邮件草稿",
+      "draft": "邮件草稿",
+      "send": "打开邮件应用",
+      "copy": "复制内容",
+      "copied": "内容已复制。",
+      "copyFail": "请选中草稿内容并手动复制。",
+      "local": "草稿仅保留在浏览器中，由您决定何时发送。",
+      "outputs": "有用的成果",
+      "studio": "创作空间",
+      "work": "合作的可能方式",
+      "more": "继续探索",
+      "music": "音乐",
+      "film": "胶片摄影"
     }
+  },
+  "meta": {
+    "name": "Nguyễn Đình Thuyên",
+    "legal": "Nguyễn Đình Thuyên",
+    "domain": "https://nguyenthuyen.vn",
+    "email": "hi@nguyenthuyen.vn",
+    "mark": "t."
   }
 }

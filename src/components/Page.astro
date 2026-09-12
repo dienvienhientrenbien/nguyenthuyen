@@ -1,32 +1,31 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import HeroScene from './HeroScene.astro';
+import Experience from './Experience.astro';
+import Brief from './Brief.astro';
 import data from '../data/content.json';
 const { page='home', lang='en' } = Astro.props;
 const d=data.pages[lang][page], u=data.ui[lang], brand=data.brand;
-const personal=brand==='personal';
-const brandName=personal?'Nguyễn Đình Thuyên':'DUNCAN SYSTEM LLC';
-const email=personal?'hi@nguyenthuyen.vn':'contact@duncansystem.com';
+const personal=brand==='personal',creative=brand==='creative';
+const {legal:brandName,email}=data.meta;
 const local=(slug='')=>`${lang==='en'?'':'/'+lang}/${slug?slug+'/':''}`;
 const other=(personal?'https://duncansystem.com':'https://nguyenthuyen.vn')+local();
-const rows=data.items[lang], steps=data.steps[lang], contact=data.contacts[lang][brand];
+const contact=data.contacts[lang][brand];
 const description=d.description||`${d.title} — ${brandName}`;
 ---
 <Layout title={`${d.title} — ${brandName}`} description={description} page={page} lang={lang} brand={brand}>
 {page==='home' ? <>
  <section class="hero">
-  <div><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/><p class="lead">{d.lead}</p><div class="hero-actions"><a class="button primary" href={local('contact')}>{d.cta}<span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href={local(personal?'about':'solutions')}>{d.secondary}<span aria-hidden="true">→</span></a></div><span class="micro">{d.micro}</span></div>
-  <div class="hero-art" aria-hidden="true"><div class="orbit"></div><div class="orbit two"></div><div class="orb"></div><div class="art-tag glass">{d.tag}</div><div class="hero-display glass"><div class="display-head"><span>{d.displayLabel}</span><span>{personal?'ROOT → CORE':'SEA / SHORE'}</span></div><div class="display-row"><b set:html={d.display}/><span class="display-icon">{personal?'↗':'⌘'}</span></div></div><div class="art-caption">{d.caption}</div></div>
+  <div><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/><p class="lead">{d.lead}</p><div class="hero-actions"><a class="button primary" href={creative?'https://open.spotify.com/artist/5SDr2lA0fFux0k4qYZYbAT':local('contact')}>{d.cta}<span class="arrow" aria-hidden="true">↗</span></a><a class="button secondary" href={local(creative?'film':personal?'about':'solutions')}>{d.secondary}<span aria-hidden="true">→</span></a></div><span class="micro">{d.micro}</span></div>
+  <HeroScene brand={brand} u={u}/>
  </section>
  <div class="divider"><p>{d.divider}</p><div class="expertise">{d.expertise.map(x=><span>{x}</span>)}</div></div>
- <section class="section"><div class="section-heading"><div><div class="eyebrow">{d.sectionLabel}</div><h2 set:html={d.sectionHeading}/></div><p>{d.sectionText}</p></div><div class="service-list">{rows.map(([title,text],i)=><div class="service-row"><span class="row-number">{String(i+1).padStart(2,'0')}</span><h3>{title}</h3><p>{text}</p><a class="service-link" href={personal?(i===1?other:local('projects')):local('solutions')} aria-label={`${title} — ${personal?u.projects:u.services}`}>↗</a></div>)}</div></section>
- <section class="section story"><div><div class="eyebrow">{d.storyLabel}</div><h2 set:html={d.storyHeading}/><p>{d.storyText}</p><a class="button secondary" href={local(personal?'principles':'about')}>{d.storyCta}<span aria-hidden="true">→</span></a></div><div>{steps.map(([title,text],i)=><div class="principle"><span class="row-number">{String(i+1).padStart(2,'0')}</span><div><h3>{title}</h3><p>{text}</p></div></div>)}</div></section>
  </> : <section class="page-hero"><div class="eyebrow">{d.eyebrow}</div><h1 set:html={d.heading}/>{d.lead&&<p class="lead">{d.lead}</p>}</section>}
 
-{['solutions','projects'].includes(page)&&<section class="section compact-section"><div class="service-list">{rows.map(([title,text],i)=><div class="service-row"><span class="row-number">{String(i+1).padStart(2,'0')}</span><h3>{title}</h3><p>{text}</p><a class="service-link" href={personal&&i===1?other:local('contact')} aria-label={`${title} — ${u.contact}`}>↗</a></div>)}</div></section>}
+<Experience page={page} lang={lang}/>
+{page==='contact'&&<Brief lang={lang}/>}
 
 {page==='solutions'&&<><section class="section story"><div><div class="eyebrow">{d.roadmapLabel}</div><h2 set:html={d.roadmapHeading}/></div><div class="prose roadmap"><p>{d.roadmapText}</p><p><a href="https://leo.amazon.com/business/industries/maritime">{d.roadmapLink} ↗</a></p></div></section><p class="micro availability">{d.availability}</p></>}
-
-{page==='contact'&&d.brief&&<section class="section compact-section"><div class="eyebrow">{d.briefTitle}</div><div class="brief-grid">{d.brief.map(([title,text],i)=><article class="brief-item"><span class="row-number">{String(i+1).padStart(2,'0')}</span><h2>{title}</h2><p>{text}</p></article>)}</div></section>}
 
 {d.sections&&<div class="prose">{d.quote&&<blockquote>{d.quote}</blockquote>}{d.sections.map(([title,text])=><section><h2 class={page==='principles'?'mono':undefined}>{title}</h2><p>{text}</p></section>)}{d.closing&&<p class="quote-line">{d.closing}</p>}{personal&&page==='about'&&<p><a href={other}>DUNCAN SYSTEM LLC ↗</a></p>}</div>}
 
@@ -34,5 +33,5 @@ const description=d.description||`${d.title} — ${brandName}`;
 
 {page==='404'&&<div class="error-action"><a class="button primary" href={local()}>{u.back}<span aria-hidden="true">→</span></a></div>}
 
-{!['404','privacy','principles'].includes(page)&&<section class="contact-panel glass" aria-labelledby="contact-title"><div><div class="eyebrow">{contact[0]}</div><h2 id="contact-title" set:html={contact[1]}/><p>{contact[2]}</p></div><div class="contact-methods"><a href={`mailto:${email}`}>{email}<span>{u.email} ↗</span></a><a href="tel:+13079983948">+1 307 998 3948<span>{u.us} ↗</span></a><a href="tel:+84987123512">+84 987 123 512<span>{u.vn} ↗</span></a></div></section>}
+{!['404','privacy','principles'].includes(page)&&<section class="contact-panel glass" aria-labelledby="contact-title"><div><div class="eyebrow">{contact[0]}</div><h2 id="contact-title" set:html={contact[1]}/><p>{contact[2]}</p></div><div class="contact-methods"><a href={`mailto:${email}`}>{email}<span>{u.email} ↗</span></a>{!creative&&<><a href="tel:+13079983948">+1 307 998 3948<span>{u.us} ↗</span></a><a href="tel:+84987123512">+84 987 123 512<span>{u.vn} ↗</span></a></>}</div></section>}
 </Layout>

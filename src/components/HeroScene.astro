@@ -1,0 +1,22 @@
+---
+const {brand,u}=Astro.props;
+---
+<div class:list={['scene',`scene-${brand}`]}>
+ <div class="scene-top"><span class="mono">{brand==='corporate'?'DS / CONNECTION STUDY':brand==='personal'?'NT / SYSTEM STUDY':'DVHTB / SOUND + LIGHT'}</span><button class="motion-toggle" data-pause={u.pause} data-play={u.play} aria-pressed="false" hidden>{u.pause}</button></div>
+ {brand==='corporate'?<svg class="scene-drawing" viewBox="0 0 560 450" role="img" aria-label={u.example}>
+ <defs><pattern id="sea-grid" width="35" height="35" patternUnits="userSpaceOnUse"><path d="M 35 0 L 0 0 0 35" fill="none" stroke="currentColor" stroke-width=".5" opacity=".15"/></pattern></defs>
+ <rect width="560" height="450" fill="url(#sea-grid)"/>
+ <g class="satellite-drift" fill="none" stroke="currentColor" stroke-width="1.5"><ellipse cx="285" cy="100" rx="220" ry="59" stroke-dasharray="3 8" opacity=".3"/><g transform="translate(320 84) rotate(-22)"><rect x="-15" y="-18" width="30" height="36" rx="4" fill="var(--solid)"/><path d="M-17-10h-43v22h43m34-22h43v22H17M-48-10v22m18-22v22m18-28 12-9 12 9m-12-9v-10M30-10v22m18-22v22"/><path d="M-8 23q8 17 16 0"/></g></g>
+ <path class="signal-path" d="M320 118 247 257M320 118 447 336M248 275 359 275" fill="none" stroke="var(--accent)" stroke-width="2" stroke-dasharray="5 9"/>
+ <g class="vessel-float" fill="var(--solid)" stroke="currentColor" stroke-width="1.5"><path d="M55 301h365l-48 57H105z"/><path d="M87 301v-36h55v-21h70v57m-22-57v-26h15v26M247 301v-41h21v41"/><path d="M235 260q23-28 45 0z"/><path d="M165 244v-13h13v13M92 275h15v12H92m27-12h15v12h-15m32-30h15v13h-15m28-13h15v13h-15"/><path d="M273 277h43v24h-43m45-24h43v24h-43m45-24h25v24h-25"/><path d="M120 333h231" stroke="var(--accent)" stroke-width="3"/></g>
+ <g fill="none" stroke="currentColor" opacity=".3"><path class="water-line" d="M0 370q35-13 70 0t70 0t70 0t70 0t70 0t70 0t70 0t70 0M0 391q35-9 70 0t70 0t70 0t70 0t70 0t70 0t70 0t70 0"/><path d="M447 336v-97m-20 97v-57h40v57m-20-86 25 28h-50z"/></g>
+ <g class="diagram-label" fill="currentColor"><text x="30" y="55">01 / LOW EARTH ORBIT</text><text x="30" y="420">02 / ONBOARD NETWORK</text><text x="375" y="420">03 / SHORE</text></g>
+ </svg>:brand==='personal'?<div class="system-stack" role="img" aria-label={u.example}>
+  {['ROOT','CORE','BRANCH','LEAF'].map((label,i)=><div class:list={['system-sheet','glass',`sheet-${i}`]}><span class="mono">0{i+1} / {label}</span><div class="sheet-lines" aria-hidden="true"><i/><i/><i/></div><span class="sheet-node" aria-hidden="true">{['◎','⌘','↗','✳'][i]}</span></div>)}<div class="stack-axis" aria-hidden="true"/>
+ </div>:<div class="creative-scene" role="img" aria-label={u.example}>
+  <div class="film-card film-back" aria-hidden="true"><span class="film-sprockets"/><div class="exposure exposure-warm"/><span class="frame-number">01 / LIGHT</span></div>
+  <div class="film-card film-front" aria-hidden="true"><span class="film-sprockets"/><div class="exposure exposure-sea"/><span class="frame-number">02 / AFTERIMAGE</span></div>
+  <div class="wave-band" aria-hidden="true">{Array.from({length:43},(_,i)=><i style={`--bar:${18+Math.round(Math.sin(i*.83)**2*61)}%;--delay:${i*.07}s`}/>)}</div>
+ </div>}
+ <div class="scene-bottom"><span>{u.example}</span><span class="mono">{brand==='creative'?'35 mm / ∿':brand==='personal'?'ROOT → CORE → LEAF':'SATELLITE → VESSEL → SHORE'}</span></div>
+</div>
