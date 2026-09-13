@@ -2,5 +2,15 @@
 
 .contact-widget-panel{max-height:calc(100dvh - 175px);overflow-y:auto;overscroll-behavior:contain}.wechat-row{border-top:1px solid var(--line);padding:14px 0}.wechat-heading{display:flex;align-items:center;gap:12px}.wechat-heading>div{min-width:0}.wechat-heading strong{display:block;font-size:14px;font-weight:500}.wechat-row code,.wechat-card code{display:block;font:11px 'Courier New',monospace;overflow-wrap:anywhere;color:var(--muted);margin:4px 0}.wechat-row button,.wechat-card button{display:block;appearance:none;background:var(--soft);border:1px solid var(--line);color:var(--ink);padding:8px 12px;border-radius:12px;font:12px Geneva,Verdana,sans-serif;cursor:pointer;margin:10px 0 7px}.wechat-row>small{display:block;color:var(--muted);font-size:10px;line-height:1.55}.wechat-status{font-size:11px;line-height:1.5;margin:5px 0 0;color:var(--accent)}.wechat-status:empty{display:none}.wechat-card{border:1px solid var(--line);border-radius:18px;padding:16px;background:var(--soft)}.wechat-card strong{font-weight:500}.wechat-card code{margin-top:7px}.wechat-card>small{line-height:1.6}[data-wechat-fallback]{width:100%;box-sizing:border-box;margin-top:8px;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--solid);color:var(--ink);font:12px 'Courier New',monospace}[data-wechat-fallback][hidden]{display:none}.contact-widget .channel-icon{flex:0 0 34px}.creative .contact-widget-trigger{box-shadow:0 8px 25px #603c2b18}.creative .contact-widget-panel{box-shadow:0 20px 80px #603c2b22}
 
-/* The contact panel joins the page before the footer, keeping every footer link reachable. */
-[data-contact-boundary]{height:1px;pointer-events:none}.contact-slot{display:flex;justify-content:flex-end;min-height:0}.contact-slot:has(.is-docked){padding:24px 0}.contact-widget.is-docked{position:relative;inset:auto;z-index:25;max-width:100%;width:max-content}.contact-widget.is-docked .contact-widget-panel{position:relative;inset:auto;margin-top:14px;width:380px;max-width:100%;max-height:none;box-sizing:border-box}.contact-widget.is-docked .contact-widget-trigger{width:fit-content;margin-left:auto}.contact-widget.is-docked details[open]{width:380px;max-width:100%}
+/* Reserve the trigger's footer slot; opening the panel never changes page height. */
+[data-contact-boundary]{height:1px;pointer-events:none}
+.contact-slot{display:flex;justify-content:flex-end;align-items:flex-end;min-height:96px;padding:24px 0}
+.contact-widget.is-docked{position:relative;inset:auto;z-index:35;max-width:100%;width:max-content}
+.contact-widget.is-docked .contact-widget-trigger{width:fit-content;margin-left:auto}
+/* Both floating and footer-docked panels grow upwards from the trigger. */
+.contact-widget .contact-widget-panel{
+ position:absolute;inset:auto 0 calc(100% + 12px) auto;margin:0;
+ width:380px;max-width:calc(100vw - 40px);box-sizing:border-box;
+ max-height:var(--contact-panel-room,calc(100dvh - 195px));
+ overflow-y:auto;overscroll-behavior:contain;transform-origin:bottom right;
+}
